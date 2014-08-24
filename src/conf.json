@@ -1,5 +1,7 @@
 {
     "timezone":"Europe/Warsaw",
     "blacklist":[".gitkeep"],
-    "site_title":"KostkaRubika.net - układanie, porady, opisy"
+    "site_title":"KostkaRubika.net - układanie, porady, opisy",
+    "url": "http://kostkarubika.net",
+    "assets": "/Users/wojtek/Programowanie/WWW/Projekty/Kostka-static/KostkaRubika.net/web"
 }
