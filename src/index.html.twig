@@ -1,1 +1,76 @@
 {% extends '_layout/layout.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ site.assets ~ '/assets/js/homepage.js' }}" type="text/javascript"></script>
+{% endblock %}
+
+{% block content %}
+<div class="cube-wall">
+    <div class="brick size33">
+        <div class="cover"> 
+            <h1>Kostka rubika 3x3x3</h1>
+            <img src="{{ site.assets ~ '/assets/images/cube-3x3x3_1.jpg' }}" />
+            <div class="records">
+                NR: 6.11 | NR (avg): 8.11
+            </div>
+        </div>
+        <div class="overlay">
+            <p>
+                <h3>Metody układania:</h3>
+                <ul>
+                    <li><a href="#">Metoda LBL dla początkujących</a></li>
+                    <li><a href="#">Metoda Fridirch</a></li>
+                    <li><a href="#">Metoda ZZ dla zaawansowanych</a></li>
+                </ul>
+                <h3>Inne:</h3>
+                <ul>
+                    <li><a href="#">Historia Kostki Rubika</a></li>
+                    <li><a href="#">Objaśnienie notacji</a></li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="brick size22">
+        <div class="cover"> 
+            <h1>Kostka rubika 4x4x4</h1>
+            <img src="{{ site.assets ~ '/assets/images/cube-4x4x4_1.jpg' }}" />
+            <div class="records">
+                NR: 6.11 | NR (avg): 8.11
+            </div>
+        </div>
+        <div class="overlay">
+            <p>
+                <h3>Dostępne materiały:</h3>
+                <ul>
+                    <li>Kurs układania</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="brick size22">
+        <div class="cover"> 
+            <h1>Kostka rubika 2x2x2</h1>
+            <img src="{{ site.assets ~ '/assets/images/cube-2x2x2_1.jpg' }}" />
+            <div class="records">
+                NR: 6.11 | NR (avg): 8.11
+            </div>
+        </div>
+        <div class="overlay">
+            <p>
+                <h3>Metody układania:</h3>
+                <ul>
+                    <li>Metoda Fridrich</li>
+                    <li>Metoda Ortega</li>
+                    <li>Metoda Guimond</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="brick size22"></div>
+    <div class="brick size11"></div>
+    <div class="brick size11"></div>
+    <div class="brick size21"></div>
+    <div class="brick size23"></div>
+</div>
+{% endblock %}
