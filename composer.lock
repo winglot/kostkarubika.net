@@ -1,0 +1,231 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "74d7cd802beaa1426208dfd870e1bf59",
+    "packages": [
+        {
+            "name": "simonjodet/gumdrop",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simonjodet/gumdrop.git",
+                "reference": "f76dc484953dc54e5224b6130e09032f852c248b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simonjodet/gumdrop/zipball/f76dc484953dc54e5224b6130e09032f852c248b",
+                "reference": "f76dc484953dc54e5224b6130e09032f852c248b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "simonjodet/markdown": "1.0.*",
+                "simonjodet/twig": "1.11.*",
+                "symfony/console": "2.1.*"
+            },
+            "require-dev": {
+                "behat/behat": "2.4.*@stable",
+                "mockery/mockery": "dev-master",
+                "simonjodet/fstesthelper": "2.*"
+            },
+            "bin": [
+                "bin/gumdrop"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Gumdrop": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Jodet",
+                    "email": "simon@jodet.com",
+                    "homepage": "https://github.com/simonjodet/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Gumdrop is a static website generator converting Markdown files and using the Twig templating engine.",
+            "keywords": [
+                "generator",
+                "markdown",
+                "twig"
+            ],
+            "time": "2013-02-10 16:34:53"
+        },
+        {
+            "name": "simonjodet/markdown",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simonjodet/dflydev-markdown.git",
+                "reference": "2a1b3516bd5af6e722b40ae9e1fccd03e1772060"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simonjodet/dflydev-markdown/zipball/2a1b3516bd5af6e722b40ae9e1fccd03e1772060",
+                "reference": "2a1b3516bd5af6e722b40ae9e1fccd03e1772060",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "dflydev\\markdown": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "New BSD License"
+            ],
+            "authors": [
+                {
+                    "name": "Dragonfly Development Inc.",
+                    "email": "info@dflydev.com",
+                    "homepage": "http://dflydev.com"
+                },
+                {
+                    "name": "Beau Simensen",
+                    "email": "beau@dflydev.com",
+                    "homepage": "http://beausimensen.com"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "homepage": "http://michelf.com"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net"
+                }
+            ],
+            "description": "PHP Markdown & Extra",
+            "homepage": "http://github.com/dflydev/dflydev-markdown",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2012-01-16 03:36:37"
+        },
+        {
+            "name": "simonjodet/twig",
+            "version": "v1.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simonjodet/Twig.git",
+                "reference": "e81b98944f3c3157eb6a3d5392374c52931e646d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simonjodet/Twig/zipball/e81b98944f3c3157eb6a3d5392374c52931e646d",
+                "reference": "e81b98944f3c3157eb6a3d5392374c52931e646d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.11-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2012-11-11 17:17:59"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.1.13",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "a5e96b2363aca8a5400fec3bbcb3201a4b0513fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/a5e96b2363aca8a5400fec3bbcb3201a4b0513fb",
+                "reference": "a5e96b2363aca8a5400fec3bbcb3201a4b0513fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-06-11 07:34:22"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "prefer-stable": false,
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

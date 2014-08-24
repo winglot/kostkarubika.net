@@ -1,0 +1,21 @@
+{
+  "name": "KostkaRubika.net",
+  "description": "A fan site about Rubik's Cube and it's variations",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Wojciech Inglot",
+      "email": "wojciech@inglot.net.pl"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "require": {
+    "simonjodet/gumdrop": "1.*"
+  },
+  "scripts": {
+    "post-update-cmd": "php vendor/simonjodet/gumdrop/gumdrop.php install",
+    "post-install-cmd": "php vendor/simonjodet/gumdrop/gumdrop.php install"
+  }
+}
