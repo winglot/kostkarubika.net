@@ -12,14 +12,21 @@
         "vendor-dir": "vendor"
     },
     "require": {
-        "simonjodet/gumdrop": "1.*"
+        "winglot/gumdrop": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://git.inglot.net.pl/winglot/gumdrop.git"
+        }
+    ],
+    "minimum-stability": "dev",
     "scripts": {
-        "post-update-cmd": "php vendor/simonjodet/gumdrop/gumdrop.php install",
+        "post-update-cmd": "php vendor/winglot/gumdrop/gumdrop.php install",
         "post-install-cmd": [
-            "php vendor/simonjodet/gumdrop/gumdrop.php install",
+            "php vendor/winglot/gumdrop/gumdrop.php install",
             "mkdir bin",
-            "ln -s ../vendor/simonjodet/gumdrop/gumdrop.php bin/gumdrop.php"
+            "ln -s ../vendor/winglot/gumdrop/gumdrop.php bin/gumdrop.php"
         ]
     }
 }

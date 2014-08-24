@@ -1,3 +1,8 @@
+***
+{
+    "layout": "_layout/article.html.twig"
+}
+***
 #Historia kostki Rubika
 
 <img src="http://www.kostkarubika.net/upload/images/3x3opis2.jpg" style="float: left; margin: 5px;" />

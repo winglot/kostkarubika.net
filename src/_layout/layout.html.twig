@@ -6,7 +6,7 @@
         {% block stylesheets %}
             {% include "_layout/elements/html5shiv.html.twig" %}
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            {% include "_layout/elements/stylesheets.html.twig" %}
+            {% include "_layout/elements/stylesheets.html.twig" with { 'site': site } %}
         {% endblock %}
 
         {% include "_layout/elements/facebook-meta.twig" %}
@@ -15,7 +15,7 @@
 
         {% block body %}
             <!-- Fixed navbar -->
-            {% include "_layout/elements/navbar.html.twig" %}
+            {% include "_layout/elements/navbar.html.twig" with { 'site': site } %}
 
             {% block page %}
                 <div class="container">
@@ -24,11 +24,11 @@
             {% endblock %}
 
             <!-- Sticky footer -->
-            {% include "_layout/elements/footer.html.twig" %}
+            {% include "_layout/elements/footer.html.twig" with { 'site': site } %}
         {% endblock %}
 
         {% block javascripts %}
-            {% include "_layout/elements/javascripts.html.twig" %}
+            {% include "_layout/elements/javascripts.html.twig" with { 'site': site } %}
         {% endblock %}
     </body>
 </html>
