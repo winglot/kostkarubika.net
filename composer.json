@@ -25,8 +25,8 @@
         "post-update-cmd": "php vendor/winglot/gumdrop/gumdrop.php install",
         "post-install-cmd": [
             "php vendor/winglot/gumdrop/gumdrop.php install",
-            "mkdir bin",
-            "ln -s ../vendor/winglot/gumdrop/gumdrop.php bin/gumdrop.php"
+            "mkdir -p bin",
+            "ln -sf ../vendor/winglot/gumdrop/gumdrop.php bin/gumdrop.php"
         ]
     }
 }
