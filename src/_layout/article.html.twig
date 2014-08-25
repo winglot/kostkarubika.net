@@ -1,5 +1,13 @@
 {% extends "_layout/layout.html.twig" %}
 
 {% block content %}
-    {{ page.html }}
+    {% set html = page.html %}
+    
+    {% for name,route in site.routes %}
+        {% set html = html|replace({('%route.'~name~'%'): site.url ~ route}) %}
+    {% endfor %}
+    {% set html = html|replace({'%site.assets%': site.assets}) %}
+    {% set html = html|replace({'%site.url%': site.url}) %}
+
+    {{ html }}
 {% endblock %}

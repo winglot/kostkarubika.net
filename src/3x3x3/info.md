@@ -1,11 +1,12 @@
 ***
 {
-    "layout": "_layout/article.html.twig"
+    "layout": "_layout/article.html.twig",
+    "target_name": "info.html"
 }
 ***
 #Historia kostki Rubika
 
-<img src="http://www.kostkarubika.net/upload/images/3x3opis2.jpg" style="float: left; margin: 5px;" />
+<img src="%site.assets%/assets/images/3x3x3/info.jpg" style="float: left; margin: 5px;" />
 Erno Rubik był profesorem architektury Budapeszteńskiej Akademii Sztuki Użytkowej. W 1974 roku wymyślił kostkę po to, aby pomóc studentom w zrozumieniu przestrzeni. Z pozoru łatwe zadanie polegające na ułożeniu pomieszanych kolorów kostki okazało się dla wielu osób niewykonalne (samemu autorowi, ułożenie jego pierwszej kostki zajęło miesiąc).
 
 Po pewnym treningu, ułożenie kostki zajmowało niespełna kilka minut. Chęć rywalizacji i rozwiązywania łamigłówek była motorem, który zmuszał ludzi do coraz większego zainteresowania tym wynalazkiem. Pierwsza partia pięciu tysięcy kostek znalazła się w Węgierskich sklepach przed Bożym Narodzeniem 1977 roku i rozeszła się natychmiast.
@@ -14,7 +15,7 @@ Niedługo potem ogłoszono w Budapeszcie powstanie klubu kostki Rubika, gdzie mo
 
 Rozpoczął się prawdziwy szał.
 
-<img src="http://www.kostkarubika.net/upload/images/3x3opis1.jpg" style="float: right"/>
+<img src="%site.assets%/assets/images/3x3x3/info2.jpg" style="float: right"/>
 W 1980 roku rekord świata w prędkości ułożenia kostki wynosił 54 sekundy. W tym samym roku o nowym fenomenie pisano już w takich magazynach jak Time czy Newsweek. W amerykańskiej telewizji pojawił się program pod tytułem: "Rubik, The Amazing Cube" ("Zadziwiająca kostka Rubika").
 
 W marcu 1981 roku w słynnym londyńskim sklepie z zabawkami, Hamleys zabrakło kostek, dlatego przepraszano zniecierpliwionych klientów i najbliższą dostawę zapowiadano na kwiecień. Sprzedaż kostek w samej tylko Anglii przewidziano na milion sztuk rocznie (każda w cenie 7 funtów). Na rynku pojawiły się podróbki. W 1982 odbyły się pierwsze mistrzostwa świata w układaniu kostki, gdzie Amerykanin, Minh Thai, pobił rekord w prędkości układania - 22,95 sekundy

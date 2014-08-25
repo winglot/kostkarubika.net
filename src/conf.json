@@ -3,5 +3,9 @@
     "blacklist":[".gitkeep"],
     "site_title":"KostkaRubika.net - układanie, porady, opisy",
     "url": "http://kostkarubika.net",
-    "assets": "http://kostkarubika.net"
+    "assets": "http://kostkarubika.net",
+
+    "routes": {
+        "history": "/3x3x3/info.html"
+    }
 }
