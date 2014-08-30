@@ -1,13 +1,19 @@
 {% extends "_layout/layout.html.twig" %}
 
 {% block content %}
-    {% set html = page.html %}
-    
-    {% for name,route in site.routes %}
-        {% set html = html|replace({('%route.'~name~'%'): site.url ~ route}) %}
-    {% endfor %}
-    {% set html = html|replace({'%site.assets%': site.assets}) %}
-    {% set html = html|replace({'%site.url%': site.url}) %}
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <article>
+                {% set html = page.html %}
+                
+                {% for name,route in site.routes %}
+                    {% set html = html|replace({('%route.'~name~'%'): site.url ~ route}) %}
+                {% endfor %}
+                {% set html = html|replace({'%site.assets%': site.assets}) %}
+                {% set html = html|replace({'%site.url%': site.url}) %}
 
-    {{ html }}
+                {{ html }}
+            </article>
+        </div>
+    </div>
 {% endblock %}

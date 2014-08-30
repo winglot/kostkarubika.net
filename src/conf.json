@@ -2,10 +2,18 @@
     "timezone":"Europe/Warsaw",
     "blacklist":[".gitkeep"],
     "site_title":"KostkaRubika.net - układanie, porady, opisy",
-    "url": "http://kostkarubika.net",
-    "assets": "http://kostkarubika.net",
+    "url": "http://kostkarubika.dev",
+    "assets": "http://kostkarubika.dev",
 
     "routes": {
-        "history": "/3x3x3/info.html"
+        "history": "/3x3x3/info.html",
+
+        "2x2x2.fridrich.wstep": "/2x2x2/fridrich/wstep.html",
+        "2x2x2.fridrich.oll": "/2x2x2/fridrich/oll.html",
+        "2x2x2.fridrich.pll": "/2x2x2/fridrich/pll.html",
+
+        "2x2x2.ortega.wstep": "/2x2x2/ortega/wstep.html",
+        "2x2x2.ortega.orientacja": "/2x2x2/ortega/orientacja.html",
+        "2x2x2.ortega.permutacja": "/2x2x2/ortega/permutacja.html"
     }
 }

@@ -7,7 +7,7 @@
 
 {% block content %}
 <div class="cube-wall">
-    <div class="brick size33">
+    <div class="brick size22">
         <div class="cover"> 
             <h1>Kostka rubika 3x3x3</h1>
             <img src="{{ site.assets ~ '/assets/images/tiles/cube-3x3x3_1.jpg' }}" />
@@ -61,16 +61,11 @@
                 <h3>Metody układania:</h3>
                 <ul>
                     <li><a href="{{ site.url ~ attribute(site.routes, "2x2x2.fridrich.wstep") }}">Metoda Fridrich</a></li>
-                    <li>Metoda Ortega</li>
+                    <li><a href="{{ site.url ~ attribute(site.routes, "2x2x2.ortega.wstep") }}">Metoda Ortega</a></li>
                     <li>Metoda Guimond</li>
                 </ul>
             </p>
         </div>
     </div>
-    <div class="brick size22"></div>
-    <div class="brick size11"></div>
-    <div class="brick size11"></div>
-    <div class="brick size21"></div>
-    <div class="brick size23"></div>
 </div>
 {% endblock %}

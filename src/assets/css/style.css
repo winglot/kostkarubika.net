@@ -1,5 +1,9 @@
 /* Sticky footer styles
 -------------------------------------------------- */
+* {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -41,4 +45,19 @@ body > .container {
 .navbar-default {
     background-color: #303e49;
     color: white;
+}
+
+article {
+    background-color: white;
+    box-shadow: 0 3px 0 #d7e4ed;
+    border-radius: 5px;
+    min-height: 450px !important;
+    margin: 15px 0 25px 0;
+    padding: 10px 25px 10px 25px;
+}
+
+article h1 {
+    color: #49A7F3;
+    border-bottom: 2px dashed #49A7F3;
+    font-size: 30px;
 }
