@@ -54,10 +54,25 @@ article {
     min-height: 450px !important;
     margin: 15px 0 25px 0;
     padding: 10px 25px 10px 25px;
+    text-align: justify;
 }
 
 article h1 {
     color: #49A7F3;
     border-bottom: 2px dashed #49A7F3;
     font-size: 30px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+article img {
+    margin: 10px;   
+}
+
+.centered {
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
 }

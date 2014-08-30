@@ -4,8 +4,8 @@ $(function() {
         wall.reset({
             selector: '.brick',
             animate: true,
-            cellW: 180,
-            cellH: 180,
+            cellW: 175,
+            cellH: 175,
             onResize: function() {
                 wall.fitWidth();
             }

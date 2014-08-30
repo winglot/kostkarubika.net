@@ -164,7 +164,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.inglot.net.pl/winglot/gumdrop.git",
-                "reference": "8dee3581d1434c444033c3b6e82cd760666ae94e"
+                "reference": "fad8322c9b67d82205b77b978b30787c4d1f8818"
             },
             "require": {
                 "michelf/php-markdown": "1.4.1",
@@ -213,7 +213,7 @@
                 "markdown",
                 "twig"
             ],
-            "time": "2014-08-24 21:49:12"
+            "time": "2014-08-30 21:07:02"
         }
     ],
     "packages-dev": [

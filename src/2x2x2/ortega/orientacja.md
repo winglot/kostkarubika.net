@@ -1,9 +1,3 @@
-***
-{
-    "layout": "_layout/article.html.twig",
-    "target_name": "orientacja.html"
-}
-***
 # Drugi kolor na przeciwległej ściance
 
 Drugim etapem w Ortedze jest ułożenie koloru na ściance przeciwległej do tej, od której zaczęliśmy układanie

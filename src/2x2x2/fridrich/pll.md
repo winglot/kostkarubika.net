@@ -1,9 +1,3 @@
-***
-{
-    "layout": "_layout/article.html.twig",
-    "target_name": "pll.html"
-}
-***
 # PLL - permutacja ostatniej warstwy
 
 Zestaw algorytmów pozwalających spermutować ostatnią warstwę kostki 2x2x2 i tym samym zakończyć jej układanie. Cześć przypadków posiada kilka algorytmów - od Ciebie zależy który wybierzesz.

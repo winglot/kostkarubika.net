@@ -1,9 +1,3 @@
-***
-{
-    "layout": "_layout/article.html.twig",
-    "target_name": "oll.html"
-}
-***
 # OLL - orientacja ostatniej warstwy
 
 Poniżej znajduje się zestaw algorytmów pozwalających zorientować (ułożyć kolor) ostatnią warstwę w kostce 2x2x2. Cześć przypadków posiada kilka algorytmów - od Ciebie zależy który wybierzesz.

@@ -1,6 +1,6 @@
 # Permutacja warstw
 
-Ostatnim etapem w układaniu metodą Ortega jest spermutowanie obydwóch warstw.
+Ostatnim etapem jest permutacja obu warstw (jeżeli znasz już metodę Ortega to z pewnością zauważysz, że są to te same algorytmy).
 
 
 | Ilustracja (góra - dół)                                           | Ilustracja  - ogólny podgląd kostki                                | Algorytm                                           |
