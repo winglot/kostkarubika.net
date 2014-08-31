@@ -4,8 +4,8 @@
 }
 ***
 
-[case1]: %site.assets%/assets/images/2x2x2/guimond/4.png ("Przypadek pierwszy")
-[case2]: %site.assets%/assets/images/2x2x2/guimond/5.png ("Przypadek drugi")
+[case1]: %site.assets%/images/2x2x2/guimond/4.png ("Przypadek pierwszy")
+[case2]: %site.assets%/images/2x2x2/guimond/5.png ("Przypadek drugi")
 
 # Dwie ścianki
 
