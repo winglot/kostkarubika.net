@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: metoda Ortega - permutacja warstw"    
+}
+***
 # Permutacja warstw
 
 Ostatnim etapem w układaniu metodą Ortega jest spermutowanie obydwóch warstw.

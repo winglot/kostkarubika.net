@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: metoda Guimond - permutacja warstw"    
+}
+***
 # Permutacja warstw
 
 Ostatnim etapem jest permutacja obu warstw (jeżeli znasz już metodę Ortega to z pewnością zauważysz, że są to te same algorytmy).

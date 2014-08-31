@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: metoda Fridirich - OLL orientacja ostatniej warstwy"    
+}
+***
 # OLL - orientacja ostatniej warstwy
 
 Poniżej znajduje się zestaw algorytmów pozwalających zorientować (ułożyć kolor) ostatnią warstwę w kostce 2x2x2. Cześć przypadków posiada kilka algorytmów - od Ciebie zależy który wybierzesz.

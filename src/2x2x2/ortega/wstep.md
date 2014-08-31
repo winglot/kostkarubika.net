@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: wprowadzenie do metody Ortega"
+}
+***
 # Wprowadzenie do metody Ortega
 
 Metoda Ortega jest ulepszeniem metody Fridrich. Cały plan polega na tym aby ułożyć tylko kolor na dwóch przeciległych ściankach a następnie jednym algorytmem ułożyć kostkę. W porównaniu z metodą Fridrich (dla kostki 2x2x2) jest tu tylko 4 algorytmy więcej (2 + 2 lustrzane) do nauki.

@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: metoda Fridirich - PLL permutacja ostatniej warstwy"    
+}
+***
 # PLL - permutacja ostatniej warstwy
 
 Zestaw algorytmów pozwalających spermutować ostatnią warstwę kostki 2x2x2 i tym samym zakończyć jej układanie. Cześć przypadków posiada kilka algorytmów - od Ciebie zależy który wybierzesz.

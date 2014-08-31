@@ -1,9 +1,9 @@
 {
     "timezone":"Europe/Warsaw",
     "blacklist":[".gitkeep"],
-    "site_title":"KostkaRubika.net - układanie, porady, opisy",
+    "title":"KostkaRubika.net - układanie, opisy, porady",
     "url": "http://kostkarubika.dev",
-    "assets": "http://kostkarubika.dev",
+    "assets": "http://kostkarubika.dev/assets",
     "layout": "_layout/article.html.twig",
 
     "routes": {
@@ -21,6 +21,10 @@
         "2x2x2.guimond.trzy_narozniki":     "/2x2x2/guimond/trzy_narozniki.html",
         "2x2x2.guimond.dwie_scianki":       "/2x2x2/guimond/dwie_scianki.html",
         "2x2x2.guimond.zamiana_naroznikow": "/2x2x2/guimond/zamiana_naroznikow.html",
-        "2x2x2.guimond.permutacja":         "/2x2x2/guimond/permutacja.html"
+        "2x2x2.guimond.permutacja":         "/2x2x2/guimond/permutacja.html",
+
+        "pyraminx.ukladanie.wstep": "/pyraminx/ukladanie/wstep.html",
+        "pyraminx.ukladanie.pierwsza_warstwa": "/pyraminx/ukladanie/pierwsza_warstwa.html",
+        "pyraminx.ukladanie.permutacja": "/pyraminx/ukladanie/permutacja.html"
     }
 }

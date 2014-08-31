@@ -1,5 +1,13 @@
 {% extends "_layout/layout.html.twig" %}
 
+{% block title %}
+    {% if page.title is defined and page.title is not empty %}
+        {{ page.title ~ " - " ~ site.title }}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+
 {% block content %}
     <div class="row">
         <div class="col-md-10 col-md-offset-1">

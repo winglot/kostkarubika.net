@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: wprowadzenie do metody Fridrich"
+}
+***
 # Wprowadzenie do metody Fridrich
 
 Metoda Fridrich w kostce 2x2x2 różni sie od tej z 3x3x3 mniejszą ilością algorytmów oraz ilością kroków - ponieważ pomijamy wszystko co związane z krawędziami (kostka 2x2x2 ich nie posiada).

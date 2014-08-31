@@ -1,3 +1,9 @@
+***
+{
+    "title": "Kostka 2x2x2: metoda Guimond - Trzy narożniki"    
+}
+***
+
 [case1]: %site.assets%/images/2x2x2/guimond/4.png ("Przypadek pierwszy")
 [case2]: %site.assets%/images/2x2x2/guimond/5.png ("Przypadek drugi")
 

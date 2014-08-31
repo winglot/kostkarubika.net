@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: metoda Ortega - OLL orientacja drugiej warstwy"
+}
+***
 # Drugi kolor na przeciwległej ściance
 
 Drugim etapem w Ortedze jest ułożenie koloru na ściance przeciwległej do tej, od której zaczęliśmy układanie

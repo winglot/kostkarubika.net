@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: wprowadzenie do metody Guimond"    
+}
+***
 # Wprowadzenie do metody Guimond
 
 Metoda ta została opracowana przez Gaetan'a Guimond'a. Jest to jedna z ciekawszych a zarazem najszybszych metod układania kostki 2x2x2.

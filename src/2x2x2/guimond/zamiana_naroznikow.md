@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 2x2x2: metoda Guimond - zamiana narożników"    
+}
+***
 # Zamiana narożników
 
 Wynikiem poprzednich etapów jest to, że na dwóch ściankach mamy dowolnie rozmieszczone narożniki o kolorach z naprzeciwległych ścianek kostki. 
