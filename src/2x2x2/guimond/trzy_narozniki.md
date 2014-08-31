@@ -1,5 +1,5 @@
-[case1]: %site.assets%/assets/images/2x2x2/guimond/4.png ("Przypadek pierwszy")
-[case2]: %site.assets%/assets/images/2x2x2/guimond/5.png ("Przypadek drugi")
+[case1]: %site.assets%/images/2x2x2/guimond/4.png ("Przypadek pierwszy")
+[case2]: %site.assets%/images/2x2x2/guimond/5.png ("Przypadek drugi")
 
 # Trzy narożniki
 
@@ -14,6 +14,6 @@ Aby przejść do następnego etapu musimy tutaj rozróżnić dwa przypadki. Kolo
 
 Przykładowe wyglądy kostek:
 
-![Przykład 1](%site.assets%/assets/images/2x2x2/guimond/1.png "Przykład pierwszy")
-![Przykład 2](%site.assets%/assets/images/2x2x2/guimond/2.png "Przykład drugi")
-![Przykład 3](%site.assets%/assets/images/2x2x2/guimond/3.png "Przykład trzeci")
+![Przykład 1](%site.assets%/images/2x2x2/guimond/1.png "Przykład pierwszy")
+![Przykład 2](%site.assets%/images/2x2x2/guimond/2.png "Przykład drugi")
+![Przykład 3](%site.assets%/images/2x2x2/guimond/3.png "Przykład trzeci")
