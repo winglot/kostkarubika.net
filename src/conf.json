@@ -7,24 +7,11 @@
     "layout": "_layout/article.html.twig",
 
     "routes": {
-        "history": "/3x3x3/info.html",
-
-        "2x2x2.fridrich.wstep": "/2x2x2/fridrich/wstep.html",
-        "2x2x2.fridrich.oll":   "/2x2x2/fridrich/oll.html",
-        "2x2x2.fridrich.pll":   "/2x2x2/fridrich/pll.html",
-
-        "2x2x2.ortega.wstep":      "/2x2x2/ortega/wstep.html",
-        "2x2x2.ortega.orientacja": "/2x2x2/ortega/orientacja.html",
-        "2x2x2.ortega.permutacja": "/2x2x2/ortega/permutacja.html",
-
-        "2x2x2.guimond.wstep":              "/2x2x2/guimond/wstep.html",
-        "2x2x2.guimond.trzy_narozniki":     "/2x2x2/guimond/trzy_narozniki.html",
-        "2x2x2.guimond.dwie_scianki":       "/2x2x2/guimond/dwie_scianki.html",
-        "2x2x2.guimond.zamiana_naroznikow": "/2x2x2/guimond/zamiana_naroznikow.html",
-        "2x2x2.guimond.permutacja":         "/2x2x2/guimond/permutacja.html",
-
-        "pyraminx.ukladanie.wstep": "/pyraminx/ukladanie/wstep.html",
-        "pyraminx.ukladanie.pierwsza_warstwa": "/pyraminx/ukladanie/pierwsza_warstwa.html",
-        "pyraminx.ukladanie.permutacja": "/pyraminx/ukladanie/permutacja.html"
+        "history":            "/3x3x3/info.html",
+        "2x2x2.fridrich":     "/2x2x2/fridrich.html",
+        "2x2x2.ortega":       "/2x2x2/ortega.html",
+        "2x2x2.guimond":      "/2x2x2/guimond.html",
+        "pyraminx.ukladanie": "/pyraminx/ukladanie.html",
+        "4x4x4.ukladanie":    "/4x4x4/ukladanie.html"
     }
 }
