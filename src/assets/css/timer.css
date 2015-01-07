@@ -1,0 +1,22 @@
+.box {
+    background-color: white;
+    box-shadow: 0 3px 0 #d7e4ed;
+    border-radius: 5px;
+    margin: 15px 0 25px 0;
+    padding: 15px 25px 15px 25px;
+}
+
+#time {
+    font-size: 55px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#scramble {
+    font-size: 15px;
+    text-align: center;
+}
+
+#time-history {
+    min-height: 175px;
+}
