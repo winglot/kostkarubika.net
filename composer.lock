@@ -164,7 +164,7 @@
             "source": {
                 "type": "git",
                 "url": "http://git.inglot.net.pl/winglot/gumdrop.git",
-                "reference": "fad8322c9b67d82205b77b978b30787c4d1f8818"
+                "reference": "271c35829f545e84bbbba7ccf91e3252931454a2"
             },
             "require": {
                 "michelf/php-markdown": "1.4.1",
@@ -213,24 +213,17 @@
                 "markdown",
                 "twig"
             ],
-            "time": "2014-08-30 21:07:02"
+            "time": "2014-10-11 21:41:23"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "winglot/gumdrop": 20
     },
     "prefer-stable": false,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }
