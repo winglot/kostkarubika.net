@@ -1,13 +1,9 @@
-{% extends "_layout/elements/tiles/tile.html.twig" %}
-
-{% block tilesize %}size22{% endblock %}
+{% extends "_layout/elements/tiles/panel.html.twig" %}
 
 {% block tilename %}Pyraminx - piramidka{% endblock %}
 
-{% block tileimage %}{{ site.assets ~ '/images/tiles/cube-pyraminx_1.jpg' }}{% endblock %}
-
-{% block tileoverlay %}
-    <h3>Dostępne materiały:</h3>
+{% block tilecontent %}
+    <h4>Dostępne materiały:</h4>
     <ul>
         <li><a href="{{ site.url ~ attribute(site.routes, "pyraminx.ukladanie") }}">Kurs układania</a></li>
     </ul>

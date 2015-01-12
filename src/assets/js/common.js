@@ -6,6 +6,11 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-3975745-1', 'kostkarubika.net');
 ga('send', 'pageview');
 
-// Style tables
-$("article table").addClass("table").addClass("table-responsive").addClass("table-striped");
-$("article table th:first-child").addClass("col-sm-3");
+$(function() {
+    // Init Material Design
+    $.material.init();
+
+    // Style tables
+    $("article table").addClass("table").addClass("table-responsive").addClass("table-striped");
+    $("article table th:first-child").addClass("col-sm-3");
+});

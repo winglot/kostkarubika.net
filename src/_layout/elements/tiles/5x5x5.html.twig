@@ -1,0 +1,10 @@
+{% extends "_layout/elements/tiles/panel.html.twig" %}
+
+{% block tilename %}Kostka rubika 5x5x5{% endblock %}
+
+{% block tilecontent %}
+    <h3>Dostępne materiały:</h3>
+    <ul>
+        <li><a href="{{ site.url ~ attribute(site.routes, "5x5x5.ukladanie") }}">Kurs układania</a></li>
+    </ul>
+{% endblock %}

@@ -1,19 +1,15 @@
-{% extends "_layout/elements/tiles/tile.html.twig" %}
-
-{% block tilesize %}size33{% endblock %}
+{% extends "_layout/elements/tiles/panel.html.twig" %}
 
 {% block tilename %}Kostka rubika 3x3x3{% endblock %}
 
-{% block tileimage %}{{ site.assets ~ '/images/tiles/cube-3x3x3_1.jpg' }}{% endblock %}
-
-{% block tileoverlay %}
-    <h3>Metody układania:</h3>
+{% block tilecontent %}
+    <h4>Metody układania:</h4>
     <ul>
         <li><a href="#">Metoda LBL dla początkujących</a></li>
         <li><a href="#">Metoda Fridirch</a></li>
         <li><a href="#">Metoda ZZ dla zaawansowanych</a></li>
     </ul>
-    <h3>Inne:</h3>
+    <h4>Inne:</h4>
     <ul>
         <li><a href="{{ site.url ~ site.routes.history }}">Historia Kostki Rubika</a></li>
         <li><a href="#">Objaśnienie notacji</a></li>

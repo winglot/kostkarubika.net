@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    /* Margin bottom by footer height */
     margin-bottom: 60px;
     background-color: #e9f0f5;
 }
@@ -19,15 +18,14 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #f5f5f5;
 }
 
-.cube-wall {
+/*.cube-wall {
     margin-top: 15px;
     margin-bottom: 25px;
-}
+}*/
 
 body > .container {
     padding: 70px 15px 0;
@@ -47,15 +45,15 @@ body > .container {
     color: white;
 }
 
-.navbar-default {
+/*.navbar-default {
     background-color: #303e49;
     color: white;
-}
+}*/
 
 article {
     background-color: white;
-    box-shadow: 0 3px 0 #d7e4ed;
-    border-radius: 5px;
+    /*box-shadow: 0 3px 0 #d7e4ed;*/
+    /*border-radius: 5px;*/
     min-height: 450px !important;
     margin: 15px 0 25px 0;
     padding: 10px 25px 10px 25px;
@@ -63,8 +61,8 @@ article {
 }
 
 article h1 {
-    color: #49A7F3;
-    border-bottom: 2px dashed #49A7F3;
+    color: #03a9f4;
+    border-bottom: 2px dashed #03a9f4;
     font-size: 30px;
     margin-bottom: 25px;
     padding-bottom: 10px;

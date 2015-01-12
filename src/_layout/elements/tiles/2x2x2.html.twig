@@ -1,13 +1,11 @@
-{% extends "_layout/elements/tiles/tile.html.twig" %}
-
-{% block tilesize %}size22{% endblock %}
+{% extends "_layout/elements/tiles/panel.html.twig" %}
 
 {% block tilename %}Kostka rubika 2x2x2{% endblock %}
 
 {% block tileimage %}{{ site.assets ~ '/images/tiles/cube-2x2x2_1.jpg' }}{% endblock %}
 
-{% block tileoverlay %}
-    <h3>Metody układania:</h3>
+{% block tilecontent %}
+    <h4>Metody układania:</h4>
     <ul>
         <li><a href="{{ site.url ~ attribute(site.routes, "2x2x2.fridrich") }}">Metoda Fridrich</a></li>
         <li><a href="{{ site.url ~ attribute(site.routes, "2x2x2.ortega") }}">Metoda Ortega</a></li>
