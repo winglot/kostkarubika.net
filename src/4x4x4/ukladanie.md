@@ -1,3 +1,8 @@
+***
+{
+    "title": "Kostka 4x4x4 - kurs układania"    
+}
+***
 # Kurs układania kostki 4x4x4
 
 Aby układanie kostki 4x4x4 zakończyło się sukcesem niezbędna będzie umiejętność ułożenia kostki 3x3x3.
@@ -6,10 +11,10 @@ Aby układanie kostki 4x4x4 zakończyło się sukcesem niezbędna będzie umiej�
 
 Proces układania możemy podzielić na trzy etapy:
 
- - [Układanie środkow](#srodki) - układamy sześć środków pamiętając, że są !ruchome! czyli musimy znać układ kolorów na naszej kostce zanim ją pomieszamy,
+ - [Układanie środkow](#srodki) - układamy sześć środków pamiętając, że są **!ruchome!** czyli musimy znać układ kolorów na naszej kostce zanim ją pomieszamy,
  - [Parowanie krawędzi](#parowanie) - łączymy w dwójki krawędzie o jednakowych kolorach co pozwoli nam później traktować całą kostkę 4x4x4 jak zwykłą 3x3x3,
  - Układanie jak zwykłą 3x3x3 - sparowane krawędzie traktujemy jako jedną całość, czyli całą kostke jako 3x3x3. Możemy układać dowolną znaną nam metodą z kostki 3x3x3. Przed rozpoczęciem układania ostatniej warstwy (OLL i PLL w Metodzie Fridrich) warto zwrócić uwagę czy nie występuje błąd parzystości (algorytmy z tego etapu burzą ostanią warstwę),
- - [Błąd parzystości (parity error)](#parity) - etap ten nie zawsze pojawi się podczas układania - a jeżei już to zrobi to jest najprzykrzejszą cześcią ponieważ przydługaśne algorytmy potrafią popsuć ułożenie, które wydawało się, że będzie świetne.
+ - [Błąd parzystości (parity error)](#parity) - etap ten nie zawsze pojawi się podczas układania - a jeżeli już to zrobi to jest najprzykrzejszą cześcią ponieważ przydługaśne algorytmy potrafią popsuć ułożenie, które wydawało się, że będzie świetne.
 
 ## Układanie środków {#srodki}
 
