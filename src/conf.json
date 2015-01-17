@@ -8,10 +8,12 @@
 
     "routes": {
         "history":            "/3x3x3/info.html",
-        "2x2x2.fridrich":     "/2x2x2/fridrich.html",
-        "2x2x2.ortega":       "/2x2x2/ortega.html",
-        "2x2x2.guimond":      "/2x2x2/guimond.html",
-        "pyraminx.ukladanie": "/pyraminx/ukladanie.html",
-        "4x4x4.ukladanie":    "/4x4x4/ukladanie.html"
+        "c2_fridrich":        "/2x2x2/fridrich.html",
+        "c2_ortega":          "/2x2x2/ortega.html",
+        "c2_guimond":         "/2x2x2/guimond.html",
+        "c4_ukladanie":       "/4x4x4/ukladanie.html",
+        "c5_ukladanie":       "/5x5x5/ukladanie.html",
+        "pyraminx_ukladanie": "/pyraminx/ukladanie.html",
+        "square_ukladanie":   "/square/ukladanie.html"
     }
 }

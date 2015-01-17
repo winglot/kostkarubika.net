@@ -60,9 +60,15 @@ article {
 article h1 {
     color: #03a9f4;
     border-bottom: 2px dashed #03a9f4;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 25px;
     padding-bottom: 10px;
+}
+
+article h2 {
+    font-size: 24px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
 }
 
 article img {

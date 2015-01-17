@@ -7,8 +7,8 @@
 {% block tilecontent %}
     <h4>Metody układania:</h4>
     <ul>
-        <li><a href="{{ site.url ~ attribute(site.routes, "2x2x2.fridrich") }}">Metoda Fridrich</a></li>
-        <li><a href="{{ site.url ~ attribute(site.routes, "2x2x2.ortega") }}">Metoda Ortega</a></li>
-        <li><a href="{{ site.url ~ attribute(site.routes, "2x2x2.guimond") }}">Metoda Guimond</a></li>
+        <li><a href="{{ site.url ~ site.routes.c2_fridrich }}">Metoda Fridrich</a></li>
+        <li><a href="{{ site.url ~ site.routes.c2_ortega }}">Metoda Ortega</a></li>
+        <li><a href="{{ site.url ~ site.routes.c2_guimond }}">Metoda Guimond</a></li>
     </ul>
 {% endblock %}

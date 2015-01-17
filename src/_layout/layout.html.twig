@@ -2,31 +2,36 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <link rel="KostkaRubika.net icon" href="adres ikony" />
+
+        {# Website title #}
         <title>{% block title %}{{ site.title }}{% endblock %}</title>
+
+        {# CSS Stylesheets #}
         {% block stylesheets %}
-            {% include "_layout/elements/html5shiv.html.twig" %}
+            <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             {% include "_layout/elements/stylesheets.html.twig" with { 'site': site } %}
         {% endblock %}
-
-        {% include "_layout/elements/facebook-meta.twig" %}
     </head>
     <body>
 
         {% block body %}
-            <!-- Fixed navbar -->
+            {# Fixed navbar #}
             {% include "_layout/elements/navbar.html.twig" with { 'site': site } %}
 
+            {# Main content #}
             {% block page %}
                 <div class="container">
                     {% block content %}{% endblock %}
                 </div>
             {% endblock %}
 
-            <!-- Sticky footer -->
+            {# Sticky footer #}
             {% include "_layout/elements/footer.html.twig" with { 'site': site } %}
         {% endblock %}
 
+        {# JS at the end to speed up page load #}
         {% block javascripts %}
             {% include "_layout/elements/javascripts.html.twig" with { 'site': site } %}
         {% endblock %}
