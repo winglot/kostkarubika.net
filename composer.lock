@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d599b5a8a8348db43fd3d6ab6cbcfd26",
+    "hash": "43cff047f8bbd5add60311e050aba242",
     "packages": [
         {
             "name": "michelf/php-markdown",
@@ -106,12 +106,12 @@
             "version": "v1.16.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fabpot/Twig.git",
+                "url": "https://github.com/twigphp/Twig.git",
                 "reference": "8ce37115802e257a984a82d38254884085060024"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/8ce37115802e257a984a82d38254884085060024",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8ce37115802e257a984a82d38254884085060024",
                 "reference": "8ce37115802e257a984a82d38254884085060024",
                 "shasum": ""
             },
@@ -163,7 +163,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "http://git.inglot.net.pl/winglot/gumdrop.git",
+                "url": "git@git.inglot.net.pl:winglot/gumdrop.git",
                 "reference": "271c35829f545e84bbbba7ccf91e3252931454a2"
             },
             "require": {
