@@ -2,8 +2,8 @@
     "timezone":"Europe/Warsaw",
     "blacklist":[".gitkeep"],
     "title":"KostkaRubika.net - układanie, opisy, porady",
-    "url": "http://kostkarubika.dev",
-    "assets": "http://kostkarubika.dev/assets",
+    "url": "http://cube.dev.inglot.net.pl",
+    "assets": "http://cube.dev.inglot.net.pl/assets",
     "layout": "_layout/article.html.twig",
 
     "routes": {
