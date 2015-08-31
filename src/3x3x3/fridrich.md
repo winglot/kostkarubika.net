@@ -11,16 +11,16 @@ Metoda Fridrich jest najpopularniejszym sposobem układania standardowej kostki 
 
 Tak prezentuje się podział etapów układania:
 
- - Krzyż (tzw. cross) - ułożenie krawędzi pierwszej warstwy tak aby były zgodne ze środkami ścianek bocznych.
- - F2L (first two layers) - wstawianie rogów i odpowiadających im krawędzi jednocześnie do odpowiedniego "slotu".
- - OLL - orientowanie rogów i krawędzi ostatniej warstwy tak aby otrzymać cały kolor. Tutaj już niestety zaczynają się schody. Na pierwszy rzut oka, gdy zwykły śmiertelnik widzi 57 algorytmów do nauczenia to niemalże mdleje. Specjalnie dla takich osób powstało uproszczenie, które ma na celu rozbicie OLL na 2 etapy przez co ilość algorytmów spada do 10! Odrazu lepiej? Jednak z tą zmianą wiążą się także słabsze czasy.
- - PLL - permutacja rogów i krawędzi ostatniej warstwy czyli inaczej zamiana miejscami odpowiednich klocków aby otrzymać gotową kostkę! 21 algów można uprościć do 2 (choć jeżeli już upraszczać to najlepiej do około 6-7) ale z dosyć sporą stratą czasową.
+ - [Krzyż (tzw. cross)](#cross "Krzyż") - ułożenie krawędzi pierwszej warstwy tak aby były zgodne ze środkami ścianek bocznych.
+ - [F2L (first two layers)](#f2l "F2L") - wstawianie rogów i odpowiadających im krawędzi jednocześnie do odpowiedniego "slotu".
+ - [OLL](#full-oll "OLL") - orientowanie rogów i krawędzi ostatniej warstwy tak aby otrzymać cały kolor. Tutaj już niestety zaczynają się schody. Na pierwszy rzut oka, gdy zwykły śmiertelnik widzi 57 algorytmów do nauczenia to niemalże mdleje. Specjalnie dla takich osób powstało uproszczenie, które ma na celu rozbicie OLL na 2 etapy przez co ilość algorytmów spada do 10! Odrazu lepiej? Jednak z tą zmianą wiążą się także słabsze czasy.
+ - [PLL](#full-pll "PLL") - permutacja rogów i krawędzi ostatniej warstwy czyli inaczej zamiana miejscami odpowiednich klocków aby otrzymać gotową kostkę! 21 algów można uprościć do 2 (choć jeżeli już upraszczać to najlepiej do około 6-7) ale z dosyć sporą stratą czasową.
 
 Uproszczenie:
 
- - EO - orientacja krawędzi. Najpierw orientujemy krawędzie. Możliwych przypadków jest 3.
- - CO - orientacja rogów. W nagrodę otrzymujemy cały kolor! Algorytmów mamy 7.
- - PLL - uproszczona wersja pll'a. Do wyboru 2 lub 7 algorytmów.
+ - [EO](#eo "EO") - orientacja krawędzi. Najpierw orientujemy krawędzie. Możliwych przypadków jest 3.
+ - [CO](#co "CO") - orientacja rogów. W nagrodę otrzymujemy cały kolor! Algorytmów mamy 7.
+ - [PLL](#2look-pll "PLL") - uproszczona wersja pll'a. Do wyboru 2 lub 7 algorytmów.
 
 ## Kolejność nauki
 
@@ -51,7 +51,7 @@ Mimo dużej ilości przypadków, opanowanie tego etapu w stopniu zadowalającym 
 
 ## Uproszczony OLL
 
-### EO
+### EO {#eo}
 Pierwsza cześć z uproszczonego OLLa polega na ułożeniu krawędzi górnej warstwy. Krawędzie utworzą krzyż podobny do tego jak w pierwszym etapie układania na dolnej ściance.
 
 | Ilustracja                                       | Algorytm                |
@@ -60,7 +60,7 @@ Pierwsza cześć z uproszczonego OLLa polega na ułożeniu krawędzi górnej war
 | ![Algorytm](%site.assets%/images/3x3x3/eo/2.png) | F(URU'R')F'             |
 | ![Algorytm](%site.assets%/images/3x3x3/eo/3.png) | (RU2)(R2FRF')U2(R'FRF') |
 
-### CO
+### CO {#co}
 W drugiej część ułożymy narożniki tak aby na górnej ściance otrzymać kolor.
 
 | Ilustracja                                          | Algorytm                                                                                                                                       |
@@ -73,7 +73,7 @@ W drugiej część ułożymy narożniki tak aby na górnej ściance otrzymać ko
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_6.png) | L'U'LU'L'U2L<br />(y')RU2R'U'RU'R'                                                                                                             |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png) | x'D(RUR'D')(RU'R')<br />(y2)l'URD'R'U'lB<br />(y2)xUR'U'LURU'r'<br />(y')F'rUR'U'r'FR<br />(y)R'F'L'FRF'LF<br />(y)R'U'(RUR'F')(RUR'U')(R'FR2) |
 
-## Pełny OLL
+## Pełny OLL {#full-oll}
 Po tym etapie otrzymamy kolor na górnej ściance kostki. Mamy tutaj 57 algorytmów do nauki. Bez obaw, nie musisz od razu opanowywać wszystkich. Najlepiej zacząć od tych z uproszczenia a następnie na spokojnie dokładać kolejne.
 
 | Ilustracja                                           | Algorytm(y)                                                                                                                                    |
@@ -136,7 +136,7 @@ Po tym etapie otrzymamy kolor na górnej ściance kostki. Mamy tutaj 57 algorytm
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_6.png)  | L'U'LU'L'U2L<br />(y')RU2R'U'RU'R'                                                                                                             |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png)  | x'D(RUR'D')(RU'R')<br />(y2)l'URD'R'U'lB<br />(y2)xUR'U'LURU'r'<br />(y')F'rUR'U'r'FR<br />(y)R'F'L'FRF'LF<br />(y)R'U'(RUR'F')(RUR'U')(R'FR2) |
 
-## Pełny PLL
+## Pełny PLL {#full-pll}
 Ostatni etap na drodze do ułożonej kostki. Dokonujemy permutacji (przemieszczenia) elementów ostatniej warstwy aby ostateczenie ułożyć kostkę. Mamy 21 algorytmów. Warto zacząć od wersji uproszczonej i tak jak w poprzednim etapie - dokładać kolejne. Warto poznać wszystkie 21 algorytmów PLL zanim zaczniemy naukę wszystkich algorytmów OLL.
 
 | Ilustracja                                           | Oznaczenie | Algorytm(y)                                                                                                                                                            |
