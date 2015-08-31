@@ -49,14 +49,31 @@ Mimo dużej ilości przypadków, opanowanie tego etapu w stopniu zadowalającym 
  - wymyślenie własnych algorytmów (intuicyjnie)
  - skorzystanie z gotowych algorytmów znajdujących się poniżej
 
+## Uproszczony OLL
 
-### Para rozłączona w górnej warstwie
-### Para złączona w górnej warstwie
-### Krawędź na miejscu
-### Narożnik na miejscu
-### Para na miejscu
+### EO
+Pierwsza cześć z uproszczonego OLLa polega na ułożeniu krawędzi górnej warstwy. Krawędzie utworzą krzyż podobny do tego jak w pierwszym etapie układania na dolnej ściance.
 
-## OLL
+| Ilustracja                                       | Algorytm                |
+| -------------------------------------------------|-------------------------|
+| ![Algorytm](%site.assets%/images/3x3x3/eo/1.png) | F(RUR'U')F'             |
+| ![Algorytm](%site.assets%/images/3x3x3/eo/2.png) | F(URU'R')F'             |
+| ![Algorytm](%site.assets%/images/3x3x3/eo/3.png) | (RU2)(R2FRF')U2(R'FRF') |
+
+### CO
+W drugiej część ułożymy narożniki tak aby na górnej ściance otrzymać kolor.
+
+| Ilustracja                                          | Algorytm                                                                                                                                       |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_1.png) | (y2)z'(U'RUR'U'RU)L'(U'R'URU'R'U)<br />(R2D')(RU2R'D)(RU2R)<br />(y2)(R2D)(R'U2)(RD')(R'U2R')                                                  |
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_2.png) | R'U'RU'R'URU'R'U2R<br />(y')RU2R'U'RUR'U'RU'R'<br />(y)F(RUR'U')(RUR'U')(RUR'U')F'                                                             |
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_3.png) | RU2R2U'R2U'R2U2R<br />(R'U)(LU')(RU')(L'U'LU'L')                                                                                               |
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_4.png) | r'U'RULU'R'U<br />FRF'rUR'U'r'                                                                                                                 |
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_5.png) | RUR'URU2R'<br />yL'U2LUL'UL                                                                                                                    |
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_6.png) | L'U'LU'L'U2L<br />(y')RU2R'U'RU'R'                                                                                                             |
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png) | x'D(RUR'D')(RU'R')<br />(y2)l'URD'R'U'lB<br />(y2)xUR'U'LURU'r'<br />(y')F'rUR'U'r'FR<br />(y)R'F'L'FRF'LF<br />(y)R'U'(RUR'F')(RUR'U')(R'FR2) |
+
+## Pełny OLL
 Po tym etapie otrzymamy kolor na górnej ściance kostki. Mamy tutaj 57 algorytmów do nauki. Bez obaw, nie musisz od razu opanowywać wszystkich. Najlepiej zacząć od tych z uproszczenia a następnie na spokojnie dokładać kolejne.
 
 | Ilustracja                                           | Algorytm(y)                                                                                                                                    |
@@ -119,7 +136,7 @@ Po tym etapie otrzymamy kolor na górnej ściance kostki. Mamy tutaj 57 algorytm
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_6.png)  | L'U'LU'L'U2L<br />(y')RU2R'U'RU'R'                                                                                                             |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png)  | x'D(RUR'D')(RU'R')<br />(y2)l'URD'R'U'lB<br />(y2)xUR'U'LURU'r'<br />(y')F'rUR'U'r'FR<br />(y)R'F'L'FRF'LF<br />(y)R'U'(RUR'F')(RUR'U')(R'FR2) |
 
-## PLL
+## Pełny PLL
 Ostatni etap na drodze do ułożonej kostki. Dokonujemy permutacji (przemieszczenia) elementów ostatniej warstwy aby ostateczenie ułożyć kostkę. Mamy 21 algorytmów. Warto zacząć od wersji uproszczonej i tak jak w poprzednim etapie - dokładać kolejne. Warto poznać wszystkie 21 algorytmów PLL zanim zaczniemy naukę wszystkich algorytmów OLL.
 
 | Ilustracja                                           | Oznaczenie | Algorytm(y)                                                                                                                                                            |
