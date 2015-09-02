@@ -47,7 +47,7 @@ F2L jest to etap polegający na jednoczesnym wstawianiu odpowiedniego narożnika
 Mimo dużej ilości przypadków, opanowanie tego etapu w stopniu zadowalającym nie jest trudne. Większość przypadków nie jest trudna w rozwiązaniu i daltego można zastosować dwie metody nauki:
 
  - wymyślenie własnych algorytmów (intuicyjnie)
- - skorzystanie z gotowych algorytmów znajdujących się poniżej
+ - skorzystanie z gotowych algorytmów
 
 ## Uproszczony OLL
 
