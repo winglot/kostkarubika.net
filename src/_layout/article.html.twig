@@ -13,7 +13,7 @@
         <div class="col-md-10 col-md-offset-1">
             <article class="shadow-z-4">
                 {% set html = page.html %}
-                
+
                 {% for name,route in site.routes %}
                     {% set html = html|replace({('%route.'~name~'%'): site.url ~ route}) %}
                 {% endfor %}
