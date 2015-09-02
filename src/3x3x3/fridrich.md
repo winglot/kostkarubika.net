@@ -44,7 +44,7 @@ Może się wydawać, że ułożenie krzyża jest banalnie proste ale nie do koń
 
 F2L jest to etap polegający na jednoczesnym wstawianiu odpowiedniego narożnika i krawędzi w przeznaczone im miejsce. Dzieki temu otrzymujemy od razu gotowe dwie warstwy.
 
-Mimo dużej ilości przypadków, opanowanie tego etapu w stopniu zadowalającym nie jest trudne. Większość przypadków nie jest trudna w rozwiązaniu i daltego można zastosować dwie metody nauki:
+Mimo dużej ilości przypadków, opanowanie tego etapu w stopniu zadowalającym nie jest trudne. Większość jest stosunkowo łatwa w rozwiązaniu i dlatego można zastosować jedną z dwóch metod nauki:
 
  - wymyślenie własnych algorytmów (intuicyjnie)
  - skorzystanie z gotowych algorytmów
