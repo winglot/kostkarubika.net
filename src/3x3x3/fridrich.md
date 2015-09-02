@@ -34,7 +34,7 @@ Nauka algorytymów w odpowiedniej kolejności pozwoli cieszyć się z układania
  - Pełny OLL
  - F2L (algorytmy)
 
-Zalezam naukę pełnego PLL zanim zaczniemy zakuwać cały OLL. Algorytmy do uproszczonego OLLa (EO i CO) są stosunkowo szybkie i
+Zalecam naukę pełnego PLLa przed nauką pełnego OLLa. Algorytmy do uproszczonego OLLa (EO i CO) są stosunkowo szybkie i na początku nie dadzą dużego obniżenia czasów układania.
 
 ## Krzyż (cross) {#cross}
 
