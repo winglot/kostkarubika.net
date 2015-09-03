@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "43cff047f8bbd5add60311e050aba242",
+    "hash": "21b87ebe66b63f2fae5516755ae3a9d6",
     "packages": [
         {
             "name": "michelf/php-markdown",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6"
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
-                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9",
                 "shasum": ""
             },
             "require": {
@@ -40,45 +40,60 @@
             ],
             "authors": [
                 {
-                    "name": "Michel Fortin",
-                    "email": "michel.fortin@michelf.ca",
-                    "homepage": "http://michelf.ca/",
-                    "role": "Developer"
-                },
-                {
                     "name": "John Gruber",
                     "homepage": "http://daringfireball.net/"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP Markdown",
-            "homepage": "http://michelf.ca/projects/php-markdown/",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
             "keywords": [
                 "markdown"
             ],
-            "time": "2014-05-05 02:43:50"
+            "time": "2015-03-01 12:03:08"
         },
         {
             "name": "symfony/console",
-            "version": "2.1.x-dev",
-            "target-dir": "Symfony/Component/Console",
+            "version": "2.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "a5e96b2363aca8a5400fec3bbcb3201a4b0513fb"
+                "reference": "8dee01fd5ecb3da51d1995246dc7077377011c98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/a5e96b2363aca8a5400fec3bbcb3201a4b0513fb",
-                "reference": "a5e96b2363aca8a5400fec3bbcb3201a4b0513fb",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/8dee01fd5ecb3da51d1995246dc7077377011c98",
+                "reference": "8dee01fd5ecb3da51d1995246dc7077377011c98",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/phpunit-bridge": "~2.7",
+                "symfony/process": "~2.1"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\Component\\Console": ""
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -88,40 +103,42 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 },
                 {
                     "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Console Component",
-            "homepage": "http://symfony.com",
-            "time": "2013-06-11 07:34:22"
+            "homepage": "https://symfony.com",
+            "time": "2015-08-31 16:44:53"
         },
         {
             "name": "twig/twig",
-            "version": "v1.16.0",
+            "version": "v1.21.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "8ce37115802e257a984a82d38254884085060024"
+                "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8ce37115802e257a984a82d38254884085060024",
-                "reference": "8ce37115802e257a984a82d38254884085060024",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
+                "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.4"
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.16-dev"
+                    "dev-master": "1.21-dev"
                 }
             },
             "autoload": {
@@ -147,7 +164,7 @@
                 },
                 {
                     "name": "Twig Team",
-                    "homepage": "https://github.com/fabpot/Twig/graphs/contributors",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
                     "role": "Contributors"
                 }
             ],
@@ -156,71 +173,59 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-07-05 12:19:05"
+            "time": "2015-08-26 08:58:31"
         },
         {
-            "name": "winglot/gumdrop",
+            "name": "winglot/cubedrop",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@git.inglot.net.pl:winglot/gumdrop.git",
-                "reference": "271c35829f545e84bbbba7ccf91e3252931454a2"
+                "url": "git@git.inglot.net.pl:winglot/cubedrop.git",
+                "reference": "bebbc644f30f495dfcf9ff83a71575617605e168"
             },
             "require": {
-                "michelf/php-markdown": "1.4.1",
+                "michelf/php-markdown": "1.5.*",
                 "php": ">=5.3.3",
-                "symfony/console": "2.1.*",
-                "twig/twig": "1.16.0"
+                "symfony/console": "2.7.*",
+                "twig/twig": "1.21.*"
             },
             "require-dev": {
-                "behat/behat": "2.4.*@stable",
                 "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "4.8.*",
                 "simonjodet/fstesthelper": "2.*"
             },
             "bin": [
-                "bin/gumdrop"
+                "cubedrop.php"
             ],
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Gumdrop": "."
+                    "CubeDrop": "."
                 }
-            },
-            "scripts": {
-                "post-update-cmd": [
-                    "php gumdrop.php install"
-                ],
-                "post-install-cmd": [
-                    "php gumdrop.php install"
-                ]
             },
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Simon Jodet",
-                    "email": "simon@jodet.com"
-                },
-                {
                     "name": "Wojciech Inglot",
                     "email": "wojciech@inglot.net.pl"
                 }
             ],
-            "description": "Gumdrop is a static website generator converting Markdown files and using the Twig templating engine.",
+            "description": "CubeDrop is a static website generator converting Markdown files and using the Twig templating engine.",
             "keywords": [
                 "generator",
                 "markdown",
                 "twig"
             ],
-            "time": "2014-10-11 21:41:23"
+            "time": "2015-09-03 08:35:45"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "winglot/gumdrop": 20
+        "winglot/cubedrop": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
