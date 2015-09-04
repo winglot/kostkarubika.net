@@ -20,7 +20,7 @@ Uproszczenie:
 
  - [EO](#eo "EO") - orientacja krawędzi. Najpierw orientujemy krawędzie. Możliwych przypadków jest 3.
  - [CO](#co "CO") - orientacja rogów. W nagrodę otrzymujemy cały kolor! Algorytmów mamy 7.
- - [PLL](#2look-pll "PLL") - uproszczona wersja pll'a. Do wyboru 2 lub 7 algorytmów.
+ - [PLL](#2look-pll "PLL") - uproszczona wersja pll'a. Tylko 2 algorytmy ale niestety wymagające powtórzenia.
 
 ## Kolejność nauki
 
@@ -34,7 +34,7 @@ Nauka algorytymów w odpowiedniej kolejności pozwoli cieszyć się z układania
  - Pełny OLL
  - F2L (algorytmy)
 
-Zalecam naukę pełnego PLLa przed nauką pełnego OLLa. Algorytmy do uproszczonego OLLa (EO i CO) są stosunkowo szybkie i na początku nie dadzą dużego obniżenia czasów układania.
+Zalecam naukę pełnego PLLa przed nauką pełnego OLLa. Algorytmy do uproszczonego OLLa (EO i CO) są stosunkowo szybkie przez co nauka pozostałych na początku nie da dużego obniżenia czasów układania.
 
 ## Krzyż (cross) {#cross}
 
@@ -72,6 +72,19 @@ W drugiej część ułożymy narożniki tak aby na górnej ściance otrzymać ko
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_5.png) | RUR'URU2R'<br />yL'U2LUL'UL                                                                                                                    |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_6.png) | L'U'LU'L'U2L<br />(y')RU2R'U'RU'R'                                                                                                             |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png) | x'D(RUR'D')(RU'R')<br />(y2)l'URD'R'U'lB<br />(y2)xUR'U'LURU'r'<br />(y')F'rUR'U'r'FR<br />(y)R'F'L'FRF'LF<br />(y)R'U'(RUR'F')(RUR'U')(R'FR2) |
+
+## Uproszczony PLL {#2look-pll}
+
+Uproszczenie PLL to nic innego jak po prostu wyłuskanie spośród 21 algorytmów tych, które pozwolą nam wykonać wszystkie przypadki.
+Najbardziej skrajne uproszczenie składa się z 2 (+2 lutrzane odbicia) algorytmów. Mamy bardzo dużą stratę czasową ponieważ w niektórych
+sytuacjach musimy powtarzać jeden algorytm nawet do trzech razy!
+
+| Ilustracja                                           | Oznaczenie | Algorytm(y)                                                                                |
+|------------------------------------------------------|------------|--------------------------------------------------------------------------------------------|
+| ![Algorytm U](%site.assets%/images/3x3x3/pll/1.png)  | U          | (R'UR'U')(R'U'R'U)(RUR2)<br />y2M'U2MU'M'U2MU'M'U2M<br />y2L'UL'U'L'U'L'ULUL2              |
+| ![Algorytm U](%site.assets%/images/3x3x3/pll/2.png)  | U          | (LU'LU)(LULU')(L'U'L2)<br />y2M'U2MUM'U2MUM'U2M<br />y2RU'RURURU'R'U'R2<br />y2M2UMU2M'UM2 |
+| ![Algorytm A](%site.assets%/images/3x3x3/pll/5.png)  | A          | R'FR'B2RF'R'B2R2<br />xR'UR'D2RU'R'D2R2                                                    |
+| ![Algorytm A](%site.assets%/images/3x3x3/pll/6.png)  | A          | LF'LB2L'FLB2L2<br />yxR2D2RUR'D2RU'R                                                       |
 
 ## Pełny OLL {#full-oll}
 Po tym etapie otrzymamy kolor na górnej ściance kostki. Mamy tutaj 57 algorytmów do nauki. Bez obaw, nie musisz od razu opanowywać wszystkich. Najlepiej zacząć od tych z uproszczenia a następnie na spokojnie dokładać kolejne.
