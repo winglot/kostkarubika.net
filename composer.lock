@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "21b87ebe66b63f2fae5516755ae3a9d6",
+    "hash": "7dc7aa7a2f427c3cc342d320ea547ff2",
     "packages": [
         {
             "name": "michelf/php-markdown",
@@ -59,16 +59,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "2.7.x-dev",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "8dee01fd5ecb3da51d1995246dc7077377011c98"
+                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/8dee01fd5ecb3da51d1995246dc7077377011c98",
-                "reference": "8dee01fd5ecb3da51d1995246dc7077377011c98",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
+                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-08-31 16:44:53"
+            "time": "2015-07-28 15:18:12"
         },
         {
             "name": "twig/twig",
@@ -181,7 +181,7 @@
             "source": {
                 "type": "git",
                 "url": "git@git.inglot.net.pl:winglot/cubedrop.git",
-                "reference": "bebbc644f30f495dfcf9ff83a71575617605e168"
+                "reference": "6ed7c6a48f0f719bc48ab1ad0ab0e4077fac0bcc"
             },
             "require": {
                 "michelf/php-markdown": "1.5.*",
@@ -218,12 +218,12 @@
                 "markdown",
                 "twig"
             ],
-            "time": "2015-09-03 08:35:45"
+            "time": "2015-09-04 11:35:17"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "winglot/cubedrop": 20
     },

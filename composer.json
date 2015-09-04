@@ -1,24 +1,13 @@
 {
     "name": "KostkaRubika.net",
     "description": "A fan site about Rubik's Cube and it's variations",
-    "version": "2.0.0",
-    "authors": [
-        {
-            "name": "Wojciech Inglot",
-            "email": "wojciech@inglot.net.pl"
-        }
-    ],
-    "config": {
-        "vendor-dir": "vendor"
-    },
+    "type": "project",
+
     "require": {
         "winglot/cubedrop": "dev-master"
     },
+
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@git.inglot.net.pl:winglot/cubedrop.git"
-        }
-    ],
-    "minimum-stability": "dev"
+        { "type": "vcs", "url": "git@git.inglot.net.pl:winglot/cubedrop.git" }
+    ]
 }
