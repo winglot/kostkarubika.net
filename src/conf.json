@@ -9,6 +9,7 @@
     "routes": {
         "history":            "/3x3x3/info.html",
         "positions":          "/3x3x3/pozycje_klockow.html",
+        "notation":           "/3x3x3/notacja.html",
         "c3_fridrich":        "/3x3x3/fridrich.html",
         "c2_fridrich":        "/2x2x2/fridrich.html",
         "c2_ortega":          "/2x2x2/ortega.html",
