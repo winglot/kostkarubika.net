@@ -30,7 +30,7 @@ Legenda:
  2. Środkowa warstwa
  3. Dolna warstwa
 
-Można się spotkać także z pojęciem warstwy pierwszej/drugiej/trzeciej. Oczywiście odności się to do kolejności ich układania.
+Można się spotkać także z pojęciem warstwy pierwszej/drugiej/trzeciej. Oczywiście odnosi się to do kolejności ich układania.
 
 ## Notacja (R, L, U, F itp.)
 
