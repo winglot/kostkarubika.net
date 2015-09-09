@@ -26,13 +26,13 @@ Uproszczenie:
 
 Nauka algorytymów w odpowiedniej kolejności pozwoli cieszyć się z układania kostki a zarazem systematycznie osiągać lepsze czasy. Sugerowana przeze mnie kolejność jest następująca:
 
- - Krzyż
- - F2L (intuicyjnie)
- - Uproszczony OLL (EO, CO)
- - Uproszczony PLL
- - Pełny PLL
- - Pełny OLL
- - F2L (algorytmy)
+ - [Krzyż](#cross)
+ - [F2L (intuicyjnie)](#f2l)
+ - [Uproszczony OLL](#2look-oll) ([EO](#eo), [CO](#co))
+ - [Uproszczony PLL](#2look-pll)
+ - [Pełny PLL](#full-pll)
+ - [Pełny OLL](#full-oll)
+ - [F2L (algorytmy)](#f2l)
 
 Zalecam naukę pełnego PLLa przed nauką pełnego OLLa. Algorytmy do uproszczonego OLLa (EO i CO) są stosunkowo szybkie przez co nauka pozostałych na początku nie da dużego obniżenia czasów układania.
 
@@ -51,7 +51,7 @@ Mimo dużej ilości przypadków, opanowanie tego etapu w stopniu zadowalającym 
 
  Na początek polecam próbę samodzielnego układania bez korzystania z gotowych algorytmów. Na pewno nic na tym nie stracicie a monża zyskać dużą przyjemność i satysfakcję z ułożonej kostki.
 
-## Uproszczony OLL
+## Uproszczony OLL {#2look-oll}
 
 ### EO {#eo}
 Pierwsza cześć z uproszczonego OLLa polega na ułożeniu krawędzi górnej warstwy. Krawędzie utworzą krzyż podobny do tego jak w pierwszym etapie układania na dolnej ściance.
