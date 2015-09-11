@@ -1,9 +1,5 @@
 /* Sticky footer styles
 -------------------------------------------------- */
-* {
-    font-family: 'Ubuntu', sans-serif !important;
-}
-
 html {
     position: relative;
     min-height: 100%;

@@ -1,0 +1,6 @@
+<ol class="breadcrumb">
+  <li><a href="{{ site.url }}">KostkaRubika.net</a></li>
+  {% for breadcrumb in page.location|split('/') %}
+    <li>{{ breadcrumb|capitalize|replace({".html": "", "_": " "}) }}</li>
+  {% endfor %}
+</ol>

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <link rel="KostkaRubika.net icon" href="{{ site.assets ~ "/images/logo-small.png"}}" />
+        <meta charset="UTF-8">
+        <link rel="KostkaRubika.net icon" href="{{ site.assets ~ "/images/logo-small.png"}}">
+        <link rel="canonical" href="{{ site.url }}/{{ page.location }}" itemprop="url">
 
         {# Website title #}
-        <title>{% block title %}{{ site.title }}{% endblock %}</title>
+        <title itemprop="name">{% block title %}{{ site.title }}{% endblock %}</title>
+
+        <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {# CSS Stylesheets #}
         {% block stylesheets %}
-            <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            {% include "_layout/elements/stylesheets.html.twig" with { 'site': site } %}
+            {% include "_layout/elements/stylesheets.html.twig" %}
         {% endblock %}
     </head>
     <body>
-
         {% block body %}
             {# Fixed navbar #}
-            {% include "_layout/elements/navbar.html.twig" with { 'site': site } %}
+            {% include "_layout/elements/navbar.html.twig" %}
 
             {# Main content #}
             {% block page %}
@@ -30,7 +31,7 @@
 
         {# JS at the end to speed up page load #}
         {% block javascripts %}
-            {% include "_layout/elements/javascripts.html.twig" with { 'site': site } %}
+            {% include "_layout/elements/javascripts.html.twig" %}
         {% endblock %}
     </body>
 </html>

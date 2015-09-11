@@ -2,7 +2,7 @@
 
 {% block title %}
     {% if page.title is defined and page.title is not empty %}
-        {{ page.title ~ " - " ~ site.title }}
+        {{ page.title ~ " - " ~ site.title_short }}
     {% else %}
         {{ parent() }}
     {% endif %}
@@ -12,6 +12,7 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <article class="shadow-z-4">
+                {% include '_layout/elements/breadcrumb.html.twig' %}
                 {% set html = page.html %}
 
                 {% for name,route in site.routes %}
