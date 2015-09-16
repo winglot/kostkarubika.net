@@ -33,17 +33,17 @@ Układanie można podzielić na trzy etapy z czego jeden (wierzchołki) możemy 
 
 Jest to najprostszy etap w układaniu. Do wstawienia w odpowiednie miejsca mamy trzy z sześciu krawędzi.
 
-Musimy pamiętać aby znajdowały się w jednej warstwie (pojecie jednej wartwy w piramidce jest taki samo jak w kostce 3x3x3. Oznacza ułożenie jednego całego koloru oraz "obramowania" wokół niego). Na rysunku poniżej zaznaczone są na biało wszystkie krawędzie. Jeżeli umiesz ułożyć zwykłą kostke 3x3x3 to ten etap nie sprawi Ci żadnego problemu i po paru chwilach będziesz mógł przejść dalej.
+Musimy pamiętać aby znajdowały się w jednej warstwie ([pojęcie pierwszej warstwy](%route.basics%) w piramidce jest takie samo jak w kostce 3x3x3). Na rysunku poniżej, zaznaczone są na biało wszystkie krawędzie. Jeżeli umiesz ułożyć zwykłą kostkę 3x3x3, to ten etap nie powinien sprawić Ci żadnego problemu i po paru chwilach będziesz mógł przejść dalej.
 
 <p markdown=1 class="centered">
-![Krawędzie w piramidce](%site.assets%/images/pyraminx/kraw.png)
+![Krawędzie w piramidce](%site.assets%/images/pyraminx/edges.png)
 </p>
 
 ## Permutacja {#permutacja}
 
-Ostatni etap w układaniu piramidki. Niezbyt trudny, można poświęcić dłuższą chwilę i samemu wykombinmować aby uzyskać większą satysfakcję :).
+Ostatni etap w układaniu piramidki, niezbyt trudny, można poświęcić dłuższą chwilę i samemu wykombinować aby uzyskać większą satysfakcję z samodzielnego ułożenia :)
 
-Całkowita liczba przypadków ogranicza się do zaledwie pięciu (trzy unikalne i dwa lustrzane).
+Całkowita liczba przypadków ogranicza się do pięciu (3 + 2 lustrzane).
 
 | Ilustracja                                            | Algorytm            |
 | ----------------------------------------------------- | ------------------- |
