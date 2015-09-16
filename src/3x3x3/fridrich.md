@@ -49,7 +49,7 @@ Mimo dużej ilości przypadków, opanowanie tego etapu w stopniu zadowalającym 
  - wymyślenie własnych algorytmów (intuicyjnie)
  - skorzystanie z gotowych algorytmów
 
- Na początek polecam próbę samodzielnego układania bez korzystania z gotowych algorytmów. Na pewno nic na tym nie stracicie a monża zyskać dużą przyjemność i satysfakcję z ułożonej kostki.
+Na początek polecam próbę samodzielnego układania bez korzystania z gotowych algorytmów. Na pewno nic na tym nie stracicie a można zyskać dużą przyjemność i satysfakcję z ułożonej kostki.
 
 ## Uproszczony OLL {#2look-oll}
 
