@@ -1,6 +1,6 @@
 /* Customized styles */
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar-logo {
@@ -14,29 +14,33 @@
 }
 
 article {
-    background-color: white;
-    margin-bottom: 25px;
-    padding: 10px 25px 10px 25px;
-    text-align: justify;
+  background-color: white;
+  margin-bottom: 25px;
+  padding: 10px 25px 10px 25px;
+  text-align: justify;
 }
 
 article h1 {
-    border-bottom: 1px dashed #000;
-    font-size: 24px;
-    padding-bottom: 10px;
+  border-bottom: 1px dashed #000;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 
 article h2 {
-    font-size: 21px;
-    border-bottom: 1px dashed #ccc;
-    padding-bottom: 5px;
+  font-size: 21px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+article h3 {
+  font-size: 18px;
 }
 
 article img {
-    margin: 10px;
+  margin: 10px;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 

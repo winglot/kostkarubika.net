@@ -3,10 +3,10 @@
     "title": "Pyraminx - kurs układania"    
 }
 ***
-[up]:    %site.assets%/images/pyraminx/U.jpg "Pyraminx - notacja U"
-[front]: %site.assets%/images/pyraminx/F.jpg "Pyraminx - notacja F"
-[right]: %site.assets%/images/pyraminx/R.jpg "Pyraminx - notacja R"
-[left]:  %site.assets%/images/pyraminx/L.jpg "Pyraminx - notacja L"
+[up]:    %site.assets%/images/pyraminx/U.png "Pyraminx - notacja U"
+[front]: %site.assets%/images/pyraminx/F.png "Pyraminx - notacja F"
+[right]: %site.assets%/images/pyraminx/R.png "Pyraminx - notacja R"
+[left]:  %site.assets%/images/pyraminx/L.png "Pyraminx - notacja L"
 
 # Kurs układania kostki Pyraminx (Piramidki)
 
@@ -36,7 +36,7 @@ Jest to najprostszy etap w układaniu. Do wstawienia w odpowiednie miejsca mamy 
 Musimy pamiętać aby znajdowały się w jednej warstwie (pojecie jednej wartwy w piramidce jest taki samo jak w kostce 3x3x3. Oznacza ułożenie jednego całego koloru oraz "obramowania" wokół niego). Na rysunku poniżej zaznaczone są na biało wszystkie krawędzie. Jeżeli umiesz ułożyć zwykłą kostke 3x3x3 to ten etap nie sprawi Ci żadnego problemu i po paru chwilach będziesz mógł przejść dalej.
 
 <p markdown=1 class="centered">
-![Krawędzie w piramidce](%site.assets%/images/pyraminx/kraw.gif)
+![Krawędzie w piramidce](%site.assets%/images/pyraminx/kraw.png)
 </p>
 
 ## Permutacja {#permutacja}
@@ -47,8 +47,8 @@ Całkowita liczba przypadków ogranicza się do zaledwie pięciu (trzy unikalne 
 
 | Ilustracja                                            | Algorytm            |
 | ----------------------------------------------------- | ------------------- |
-| ![Algorytm 1](%site.assets%/images/pyraminx/pll1.gif) | R L' R' L U' L U L' |
-| ![Algorytm 2](%site.assets%/images/pyraminx/pll2.gif) | R U' R' U' R U' R'  |
-| ![Algorytm 3](%site.assets%/images/pyraminx/pll3.gif) | R U R' U R U R'     |
-| ![Algorytm 4](%site.assets%/images/pyraminx/pll4.gif) | R U L U' L' R'      |
-| ![Algorytm 5](%site.assets%/images/pyraminx/pll5.gif) | L' U' R' U R L      |
+| ![Algorytm 1](%site.assets%/images/pyraminx/pll1.png) | R L' R' L U' L U L' |
+| ![Algorytm 2](%site.assets%/images/pyraminx/pll2.png) | R U' R' U' R U' R'  |
+| ![Algorytm 3](%site.assets%/images/pyraminx/pll3.png) | R U R' U R U R'     |
+| ![Algorytm 4](%site.assets%/images/pyraminx/pll4.png) | R U L U' L' R'      |
+| ![Algorytm 5](%site.assets%/images/pyraminx/pll5.png) | L' U' R' U R L      |
