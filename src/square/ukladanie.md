@@ -1,8 +1,6 @@
-***
-{
-    "title": "Square-1 - kurs układania"    
-}
-***
+<!---
+title: "Square-1 - kurs układania"    
+-->
 # Kurs układania kostki Square-1
 
 Square-1 jest dość interesującym rodzajem kostki. Wielu niedoświadczonym osobom już samo pomieszanie sprawia problemy. Aby tego uniknąć musimy zrozumieć jak przemieszczają się poszczególne klocki oraz kiedy i jakie ruchy możemy wykonać.

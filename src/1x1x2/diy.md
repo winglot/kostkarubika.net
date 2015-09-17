@@ -1,3 +1,6 @@
+<!---
+title: "Wykonanie kostki 1x1x2"
+-->
 # Wykonanie kostki 1x1x2
 
 Tak! W tytule nie ma błędu. Dowiesz się jak domowym sposobem zrobić tą niezwykle skomplikowaną kostkę.

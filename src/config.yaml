@@ -1,0 +1,25 @@
+---
+timezone: "Europe/Warsaw"
+blacklist: [".gitkeep"]
+
+title: "KostkaRubika.net - układanie, opisy, porady"
+title_short: "KostkaRubika.net"
+
+url: "http://cube.dev.inglot.net.pl"
+assets: "http://cube.dev.inglot.net.pl/assets"
+layout: "_layout/article.html.twig"
+
+routes:
+    history:            "/3x3x3/info.html"
+    positions:          "/3x3x3/pozycje_klockow.html"
+    basics:             "/3x3x3/podstawy.html"
+    c1_diy:             "/1x1x2/diy.html"
+    c3_fridrich:        "/3x3x3/fridrich.html"
+    c2_fridrich:        "/2x2x2/fridrich.html"
+    c2_ortega:          "/2x2x2/ortega.html"
+    c2_guimond:         "/2x2x2/guimond.html"
+    c4_ukladanie:       "/4x4x4/ukladanie.html"
+    c5_ukladanie:       "/5x5x5/ukladanie.html"
+    pyraminx_ukladanie: "/pyraminx/ukladanie.html"
+    square_ukladanie:   "/square/ukladanie.html"
+

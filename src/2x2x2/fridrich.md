@@ -1,8 +1,6 @@
-***
-{
-    "title": "Kostka 2x2x2 - układanie metodą Fridrich"
-}
-***
+<!---
+title: "Kostka 2x2x2 - układanie metodą Fridrich"
+-->
 # Kurs układania kostki 2x2x2 metodą Fridrich
 
 Metoda Fridrich w kostce 2x2x2 różni sie od tej z 3x3x3 mniejszą ilością algorytmów oraz ilością kroków - ponieważ pomijamy wszystko co związane z krawędziami (kostka 2x2x2 ich nie posiada).

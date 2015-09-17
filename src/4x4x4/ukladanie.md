@@ -1,8 +1,6 @@
-***
-{
-    "title": "Kostka 4x4x4 - kurs układania"    
-}
-***
+<!---
+title: "Kostka 4x4x4 - kurs układania"    
+-->
 # Kurs układania kostki 4x4x4
 
 Aby układanie kostki 4x4x4 zakończyło się sukcesem niezbędna będzie umiejętność ułożenia kostki 3x3x3.

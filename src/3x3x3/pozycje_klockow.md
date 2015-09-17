@@ -1,9 +1,6 @@
-***
-{
-    "title": "Zapis pozycji klocków w kostce"
-}
-***
-
+<!---
+title: "Zapis pozycji klocków w kostce"
+-->
 # Zapis pozycji klocków w kostce
 
 Jak już zapewne zdążyliście zauważyć każdy narożnik (jest ich w całej kostce 8) ma kontakt z 3 różnymi ściankami. Tak więc będziemy je oznaczać przy użyciu trzech znaków notacji.

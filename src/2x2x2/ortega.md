@@ -1,8 +1,6 @@
-***
-{
-    "title": "Kostka 2x2x2 - układanie metodą Ortega"
-}
-***
+<!---
+title: "Kostka 2x2x2 - układanie metodą Ortega"
+-->
 # Kurs układania kostki 2x2x2 metodą Ortega
 
 ## Wprowadzenie

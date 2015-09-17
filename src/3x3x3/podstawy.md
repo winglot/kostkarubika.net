@@ -1,8 +1,6 @@
-***
-{
-  "title": "Podstawowe pojęcia i ruchy (R, L, U itp.)"
-}
-***
+<!---
+title: "Podstawowe pojęcia i ruchy (R, L, U itp.)"
+-->
 # Podstawowe pojęcia i ruchy (R, L, U itp.)
 
 ## Podstawowe pojęcia

@@ -1,8 +1,6 @@
-***
-{
-    "title": "Kostka 3x3x3 - układanie metodą Fridrich"
-}
-***
+<!---
+title: "Kostka 3x3x3 - układanie metodą Fridrich"
+-->
 # Kurs układania kostki 3x3x3 metodą Fridrich
 
 Metoda Fridrich jest najpopularniejszym sposobem układania standardowej kostki 3x3x3. Jest ona rozwinięciem metody LBL poprzez połączenie kilku etapów w jeden. Pozwala znacznie zredukować osiągany czas ale powoduje, że musimy zapoznać się z 78. algorytmami (OLL - 57, PLL - 21).

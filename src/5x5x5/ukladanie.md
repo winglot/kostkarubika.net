@@ -1,8 +1,6 @@
-***
-{
-    "title": "Kostka 5x5x5 - kurs układania"    
-}
-***
+<!--
+title: "Kostka 5x5x5 - kurs układania"    
+-->
 # Kurs układania kostki 5x5x5
 
 Aby układanie kostki 5x5x5 zakończyło się sukcesem niezbędna będzie umiejętność ułożenia kostki 3x3x3.
