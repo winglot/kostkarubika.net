@@ -1,5 +1,6 @@
-<!--
+<!---
 title: "Kostka 5x5x5 - kurs układania"    
+javascripts: [prettytable.js]
 -->
 # Kurs układania kostki 5x5x5
 

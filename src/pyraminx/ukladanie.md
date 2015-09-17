@@ -1,5 +1,6 @@
 <!---
 title: "Pyraminx - kurs układania"    
+javascripts: [prettytable.js]
 -->
 [up]:    %site.assets%/images/pyraminx/U.png "Pyraminx - notacja U"
 [front]: %site.assets%/images/pyraminx/F.png "Pyraminx - notacja F"

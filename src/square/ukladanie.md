@@ -1,5 +1,6 @@
 <!---
 title: "Square-1 - kurs układania"    
+javascripts: [prettytable.js]
 -->
 # Kurs układania kostki Square-1
 

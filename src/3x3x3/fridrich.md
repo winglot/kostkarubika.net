@@ -1,5 +1,6 @@
 <!---
 title: "Kostka 3x3x3 - układanie metodą Fridrich"
+javascripts: [prettytable.js]
 -->
 # Kurs układania kostki 3x3x3 metodą Fridrich
 

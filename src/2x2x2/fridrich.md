@@ -1,5 +1,6 @@
 <!---
 title: "Kostka 2x2x2 - układanie metodą Fridrich"
+javascripts: [prettytable.js]
 -->
 # Kurs układania kostki 2x2x2 metodą Fridrich
 

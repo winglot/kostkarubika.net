@@ -1,5 +1,6 @@
 <!---
 title: "Kostka 4x4x4 - kurs układania"    
+javascripts: [prettytable.js]
 -->
 # Kurs układania kostki 4x4x4
 

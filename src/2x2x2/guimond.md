@@ -1,5 +1,6 @@
 <!---
 title: "Kostka 2x2x2 - układanie metodą Guimond"    
+javascripts: [prettytable.js]
 -->
 
 [case1]: %site.assets%/images/2x2x2/guimond/4.png ("Przypadek pierwszy")

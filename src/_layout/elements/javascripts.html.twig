@@ -1,4 +1,5 @@
 <script src="{{ site.assets ~ '/js/jquery-1.9.0.min.js' }}" type="text/javascript"></script>
 <script src="{{ site.assets ~ '/js/bootstrap.min.js' }}" type="text/javascript"></script>
-<script src="{{ site.assets ~ '/js/common.js' }}" type="text/javascript"></script>
-
+{% for js in page.javascripts|default([]) %}
+<script src="{{ site.assets ~ '/js/' ~ js }}" type="text/javascript"></script>
+{% endfor %}
