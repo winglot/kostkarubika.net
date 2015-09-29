@@ -1,0 +1,8 @@
+"Build and deploy":
+  stage: build
+  script:
+    - composer install
+    - php ./vendor/bin/cubedrop.php generate
+    - "cp -r web /var/www/inglot.net.pl/cube.dev/$CI_BUILD_REF"
+    - "ln -sfn /var/www/inglot.net.pl/cube.dev/$CI_BUILD_REF /var/www/inglot.net.pl/cube.dev/current"
+
