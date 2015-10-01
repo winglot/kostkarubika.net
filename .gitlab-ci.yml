@@ -7,4 +7,6 @@ deploy:
   script:
     - "cp -r web /var/www/inglot.net.pl/cube.dev/$CI_BUILD_ID"
     - "ln -sfn /var/www/inglot.net.pl/cube.dev/$CI_BUILD_ID /var/www/inglot.net.pl/cube.dev/current"
+  only:
+    - master
 
