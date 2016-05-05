@@ -10,7 +10,7 @@ Jak wiadomo przed wykonanie jakiejkolwiek czynności należy się do niej odpowi
 
 Elementy kostki:
 
- - dwa narożniki kostki 3x3x3 (warto wcześniej sprawdzić czy jedna ze ścianek narożników jest wyciągalna - czymś w rodzaju zaślepki - jak w kostkach polskiej produkcji GATO).
+ - dwa narożniki kostki 3x3x3 (warto wcześniej sprawdzić czy jedna ze ścianek jest wyciągalna - czymś w rodzaju zaślepki).
 
 Narzędzia i inne:
 
