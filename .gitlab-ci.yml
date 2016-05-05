@@ -1,6 +1,6 @@
 before_script:
   - composer install
-  - php ./vendor/bin/cubedrop.php generate
+  - php ./vendor/bin/cubedrop.php generate --env=prod
 
 deploy:
   stage: deploy
