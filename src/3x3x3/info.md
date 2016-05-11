@@ -1,8 +1,8 @@
 <!---
 title: "Historia Kostki Rubika"
 -->
-[erno]: %site.assets%/images/3x3x3/info.jpg "Erno Rubik" {.pull-left}
-[championship]: %site.assets%/images/3x3x3/info2.jpg "World Championship" {.pull-right}
+[erno]: %site.assets%/images/3x3x3/info.png "Erno Rubik" {.pull-left}
+[championship]: %site.assets%/images/3x3x3/info2.png "World Championship" {.pull-right}
 
 # Historia kostki Rubika
 

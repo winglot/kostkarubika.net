@@ -26,24 +26,24 @@ Pierwszym etapem podczas budowy kostki 1x1x2 jest wyciągnięcie jednej ze ścia
 Teraz przy użyciu wiertarki wywiercamy na środku wyjętych ścianek otwór, w którym znajdzie się później śrubka łączące obydwa elementy.
 
 <p markdown="1" class="centered">
-![Elementy kostki](%site.assets%/images/1x1x2/1.jpg)
-![Wyjęcie ścianki](%site.assets%/images/1x1x2/2.jpg)
-![Połączenie ścianek](%site.assets%/images/1x1x2/4.jpg)
+![Elementy kostki](%site.assets%/images/1x1x2/1.png)
+![Wyjęcie ścianki](%site.assets%/images/1x1x2/2.png)
+![Połączenie ścianek](%site.assets%/images/1x1x2/4.png)
 </p>
 
 Wracamy do naszych narożników. Musimy odciąć element, który wcześniej służył do utrzymania go w kostce. Po odcięciu możemy spowrotem włożyć do narożników wcześniej wyjęte (a teraz już połączone śrubką) ścianki.
 
 <p markdown="1" class="centered">
-![Wycięcie](%site.assets%/images/1x1x2/3.jpg)
-![Połączone ścianki](%site.assets%/images/1x1x2/5.jpg)
-![Połączona kostka](%site.assets%/images/1x1x2/6.jpg)
+![Wycięcie](%site.assets%/images/1x1x2/3.png)
+![Połączone ścianki](%site.assets%/images/1x1x2/5.png)
+![Połączona kostka](%site.assets%/images/1x1x2/6.png)
 </p>
 
 Wystarczy tylko połączyć otrzymane elementy i otrzymujemy piękną i bardzo trudną w układaniu kostkę. Dla pełnej satysfakcji wypełniamy ubytek powstały po odcięciu cześci jakąś masą (masa/szpachlówka modelarska, poxilina lub inne) i oklejamy kolorkami.
 
 <p markdown="1" class="centered">
-![Kostka 1x1x2 bez naklejek](%site.assets%/images/1x1x2/7.jpg)
-![Kostka 1x1x2](%site.assets%/images/1x1x2/8.jpg)
-![Kostka 1x1x2](%site.assets%/images/1x1x2/9.jpg)
+![Kostka 1x1x2 bez naklejek](%site.assets%/images/1x1x2/7.png)
+![Kostka 1x1x2](%site.assets%/images/1x1x2/8.png)
+![Kostka 1x1x2](%site.assets%/images/1x1x2/9.png)
 </p>
 
