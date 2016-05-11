@@ -1,6 +1,6 @@
 ---
 timezone: "Europe/Warsaw"
-blacklist: [".gitkeep"]
+blacklist: ["timer.html.twig"]
 
 title: "KostkaRubika.net - zacznij układać"
 title_short: "KostkaRubika.net"
