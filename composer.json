@@ -9,11 +9,5 @@
 
     "repositories": [
         { "type": "vcs", "url": "git@git.inglot.net.pl:winglot/cubedrop.git" }
-    ],
-
-    "scripts": {
-      "build": [
-        "php ./vendor/bin/cubedrop.php generate"
-      ] 
-    }
+    ]
 }
