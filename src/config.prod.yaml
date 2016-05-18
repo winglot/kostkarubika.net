@@ -10,7 +10,7 @@ assets: "http://cube.dev.inglot.net.pl/assets"
 layout: "_layout/article.html.twig"
 
 routes:
-    history:            "/3x3x3/info.html"
+    history:            "/3x3x3/historia.html"
     positions:          "/3x3x3/pozycje_klockow.html"
     basics:             "/3x3x3/podstawy.html"
     c1_diy:             "/1x1x2/diy.html"
