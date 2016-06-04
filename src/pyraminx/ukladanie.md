@@ -14,12 +14,12 @@ Układanie pyraminx'a może z początku wydawać się trudne. Dlatego zalecam ch
 Na początek warto przedstawić notację z jaką zetkniemy się podczas tego kursu:
 
 
-| Ilustacja           | Oznaczenie w notacji |
-| ------------------- | -------------------- |
-| ![Notacja U][up]    | U - góra (UP)        |
-| ![Notacja F][front] | F - przód (FRONT)    |
-| ![Notacja R][right] | R - prawo (RIGHT)    |
-| ![Notacja L][left]  | L - lewo (LEFT)      |
+| Ilustacja           | Oznaczenie w notacji   |
+| ------------------- | ---------------------- |
+| ![Notacja U][up]    | `U` - góra (UP)        |
+| ![Notacja F][front] | `F` - przód (FRONT)    |
+| ![Notacja R][right] | `R` - prawo (RIGHT)    |
+| ![Notacja L][left]  | `L` - lewo (LEFT)      |
 
 Układanie można podzielić na trzy etapy z czego jeden (wierzchołki) możemy wykonać w dowolnym momencie:
 
@@ -44,10 +44,10 @@ Ostatni etap w układaniu piramidki, niezbyt trudny, można poświęcić dłużs
 
 Całkowita liczba przypadków ogranicza się do pięciu (3 + 2 lustrzane).
 
-| Ilustracja                                            | Algorytm            |
-| ----------------------------------------------------- | ------------------- |
-| ![Algorytm 1](%site.assets%/images/pyraminx/pll1.png) | R L' R' L U' L U L' |
-| ![Algorytm 2](%site.assets%/images/pyraminx/pll2.png) | R U' R' U' R U' R'  |
-| ![Algorytm 3](%site.assets%/images/pyraminx/pll3.png) | R U R' U R U R'     |
-| ![Algorytm 4](%site.assets%/images/pyraminx/pll4.png) | R U L U' L' R'      |
-| ![Algorytm 5](%site.assets%/images/pyraminx/pll5.png) | L' U' R' U R L      |
+| Ilustracja                                            | Algorytm              |
+| ----------------------------------------------------- | --------------------- |
+| ![Algorytm 1](%site.assets%/images/pyraminx/pll1.png) | `R L' R' L U' L U L'` |
+| ![Algorytm 2](%site.assets%/images/pyraminx/pll2.png) | `R U' R' U' R U' R'`  |
+| ![Algorytm 3](%site.assets%/images/pyraminx/pll3.png) | `R U R' U R U R'`     |
+| ![Algorytm 4](%site.assets%/images/pyraminx/pll4.png) | `R U L U' L' R'`      |
+| ![Algorytm 5](%site.assets%/images/pyraminx/pll5.png) | `L' U' R' U R L`      |
