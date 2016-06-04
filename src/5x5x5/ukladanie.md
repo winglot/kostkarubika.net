@@ -33,12 +33,12 @@ Obrazki poniżej pokazują przykładową kolejność tworzenia środka:
 
 Oraz kilka algorytmów, które pomogą przy tych bardziej wymagacjących sytuacjach:
 
-| Ilustracja                                     | Algorytm                                 |
-|------------------------------------------------|------------------------------------------|
-| ![Środki 6](%site.assets%/images/5x5x5/s6.png) | (Rr) U2 (Rr)'                            |
-| ![Środki 7](%site.assets%/images/5x5x5/s7.png) | (Rr) U' (Rr)'                            |
-| ![Środki 8](%site.assets%/images/5x5x5/s8.png) | (Rr)' F' (Ll)' (Rr) U (Rr) U' (Ll) (Rr)' |
-| ![Środki 9](%site.assets%/images/5x5x5/s9.png) | (Rr) U (Rr)' U (Rr) U2 (Rr)'             |
+| Ilustracja                                     | Algorytm                                   |
+|------------------------------------------------|--------------------------------------------|
+| ![Środki 6](%site.assets%/images/5x5x5/s6.png) | `(Rr) U2 (Rr)'`                            |
+| ![Środki 7](%site.assets%/images/5x5x5/s7.png) | `(Rr) U' (Rr)'`                            |
+| ![Środki 8](%site.assets%/images/5x5x5/s8.png) | `(Rr)' F' (Ll)' (Rr) U (Rr) U' (Ll) (Rr)'` |
+| ![Środki 9](%site.assets%/images/5x5x5/s9.png) | `(Rr) U (Rr)' U (Rr) U2 (Rr)'`             |
 
 ## Trójkowanie krawędzi {#trojkowanie}
 
@@ -46,31 +46,31 @@ Na tym etapie musimy potrójkować wszystkie krawędzie w tych samych kolorach a
 
 Poniżej przedstawiony jest najprostszy sposób na połączenie ze sobą trzech krawędzi w dwóch krokach:
 
-| Ilustracja                                               | Algorytm           |
-|----------------------------------------------------------|--------------------|
-| ![Krawędzie - krok 1](%site.assets%/images/5x5x5/k1.png) | (Rr) U L' U' (Rr)' |
-| ![Krawędzie - krok 2](%site.assets%/images/5x5x5/k2.png) | (Rr) U L' U' (Rr)' |
+| Ilustracja                                               | Algorytm             |
+|----------------------------------------------------------|----------------------|
+| ![Krawędzie - krok 1](%site.assets%/images/5x5x5/k1.png) | `(Rr) U L' U' (Rr)'` |
+| ![Krawędzie - krok 2](%site.assets%/images/5x5x5/k2.png) | `(Rr) U L' U' (Rr)'` |
 
 Powyższe algorytmy to tylko najprostszy i zarazem najdłuższ sposób na łączenie krawędzie. Z czasem powinien zostać zastąpiony przez coś bardziej wyrafinowanego.
 
 Łączenie dwóch ostatnich trójek wymaga czasem trochę gimnastyki. A to dlatego, że musimy uważać, aby nie zepsuć tego co wcześniej ułożyliśmy. Wprawa w układaniu kostki 5x5x5 pozwoli na wyeliminowanie większości z poniższych algorytmów.
 
-| Ilustracja                                                                | Algorytm                                                      |
-|---------------------------------------------------------------------------|---------------------------------------------------------------|
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k3.png)  | (Dd) R U R' F R' F' R (Dd)'                                   |
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k4.png)  | (Dd)' L' U' L F' L F L' (Dd)'                                 |
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k5.png)  | F2 (Rr) D2 (Rr)' F2 U2 F2 (Ll) B2 (Ll)'                       |
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k6.png)  | (Uu)2 (Rr)2 F2 u2 F2 (Rr)2 (Uu)2                              |
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k7.png)  | (Uu)' (Dd) R U R' F R' F' R (Dd)' (Uu)                        |
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k8.png)  | (Rr)2 B2 (Rr)' U2 (Rr)' U2 B2 (Rr)' B2 (Rr) B2 (Rr)' B2 (Rr)2 |
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k9.png)  | (Ll)' U2 (Ll)' U2 F2 (Ll)' F2 (Rr) U2 (Rr)' U2 (Ll)2          |
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k10.png) | (Rr)' U2 (Rr)2 U2 (Rr) U2 (Rr)' U2 (Rr) U2 (Rr)2 U2 (Rr)'     |
-| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k11.png) | (Ll) U2 (Ll)2 U2 (Ll)' U2 (Ll) U2 (Ll)' U2 (Ll)2 U2 (Ll)      |
+| Ilustracja                                                                | Algorytm                                                        |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------|
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k3.png)  | `(Dd) R U R' F R' F' R (Dd)'`                                   |
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k4.png)  | `(Dd)' L' U' L F' L F L' (Dd)'`                                 |
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k5.png)  | `F2 (Rr) D2 (Rr)' F2 U2 F2 (Ll) B2 (Ll)'`                       |
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k6.png)  | `(Uu)2 (Rr)2 F2 u2 F2 (Rr)2 (Uu)2`                              |
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k7.png)  | `(Uu)' (Dd) R U R' F R' F' R (Dd)' (Uu)`                        |
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k8.png)  | `(Rr)2 B2 (Rr)' U2 (Rr)' U2 B2 (Rr)' B2 (Rr) B2 (Rr)' B2 (Rr)2` |
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k9.png)  | `(Ll)' U2 (Ll)' U2 F2 (Ll)' F2 (Rr) U2 (Rr)' U2 (Ll)2`          |
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k10.png) | `(Rr)' U2 (Rr)2 U2 (Rr) U2 (Rr)' U2 (Rr) U2 (Rr)2 U2 (Rr)'`     |
+| ![Ostatnie dwie trójki - przypadek 1](%site.assets%/images/5x5x5/k11.png) | `(Ll) U2 (Ll)2 U2 (Ll)' U2 (Ll) U2 (Ll)' U2 (Ll)2 U2 (Ll)`      |
 
 ## Błąd parzystości {#parity}
 
 W tym etapie nie ma żadnej filozofii. Musimy nauczyć się długaśnego algroytmu.
 
-| Ilustracja                                                          | Algorytm                                                       |
-|---------------------------------------------------------------------|----------------------------------------------------------------|
-| ![Błąd parzystości (parity)](%site.assets%/images/5x5x5/parity.png) | (Rr)2 B2 U2 (Ll) U2 (Rr)' U2 (Rr) U2 F2 (Rr) F2 (Ll)' B2 (Rr)2 |
+| Ilustracja                                                          | Algorytm                                                         |
+|---------------------------------------------------------------------|------------------------------------------------------------------|
+| ![Błąd parzystości (parity)](%site.assets%/images/5x5x5/parity.png) | `(Rr)2 B2 U2 (Ll) U2 (Rr)' U2 (Rr) U2 F2 (Rr) F2 (Ll)' B2 (Rr)2` |
