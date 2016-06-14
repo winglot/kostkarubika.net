@@ -1,12 +1,30 @@
-before_script:
-  - composer install
-  - php ./vendor/bin/cubedrop.php generate --env=prod
+types:
+  - build
+  - deploy
+
+image: alpine:3.4
+
+build:
+  stage: build
+  script:
+    - apk --update add wget curl git openssh-client php5 php5-curl php5-openssl php5-json php5-phar php5-dom php5-ctype
+    - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+    - composer install
+    - php ./vendor/bin/cubedrop.php generate --env=prod  
+  artifacts:
+    paths:
+      - web/
+  tags:
+    - docker
 
 deploy:
   stage: deploy
+  variables:
+    DEPLOY_DIR: /var/www/kostkarubika.net
+    RELEASE_NAME: release-$CI_BUILD_ID
   script:
-    - "cp -r web /var/www/inglot.net.pl/cube.dev/$CI_BUILD_ID"
-    - "ln -sfn /var/www/inglot.net.pl/cube.dev/$CI_BUILD_ID /var/www/inglot.net.pl/cube.dev/current"
-  only:
-    - master
-
+    - mv -v web $RELEASE_NAME
+    - rsync -avWpz $RELEASE_NAME $DEPLOY_DIR/
+    - ln -svfn $DEPLOY_DIR/$RELEASE_NAME $DEPLOY_DIR/current
+  tags:
+    - shell
