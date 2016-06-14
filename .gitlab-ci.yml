@@ -16,6 +16,8 @@ build:
       - web/
   tags:
     - docker
+  only:
+    - master
 
 deploy:
   stage: deploy
@@ -28,3 +30,5 @@ deploy:
     - ln -svfn $DEPLOY_DIR/$RELEASE_NAME $DEPLOY_DIR/current
   tags:
     - shell
+  only:
+    - master
