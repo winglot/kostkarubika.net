@@ -21,6 +21,10 @@
             {# Fixed navbar #}
             {% include "_layout/elements/navbar.html.twig" %}
 
+            {% if "speedcube" in site.ads %}
+              {% include "_layout/elements/ads/speedcube.html.twig" %}
+            {% endif %}
+
             {# Main content #}
             {% block page %}
                 <div class="container">

@@ -9,6 +9,9 @@ url: "http://127.0.0.1:8080"
 assets: "http://127.0.0.1:8080/assets"
 layout: "_layout/article.html.twig"
 
+ads:
+  - speedcube
+
 routes:
     history:            "/3x3x3/historia.html"
     positions:          "/3x3x3/pozycje_klockow.html"

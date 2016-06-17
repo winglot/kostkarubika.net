@@ -9,6 +9,9 @@ url: "http://cube.dev.inglot.net.pl"
 assets: "http://cube.dev.inglot.net.pl/assets"
 layout: "_layout/article.html.twig"
 
+ads:
+  - speedcube
+
 routes:
     history:            "/3x3x3/historia.html"
     positions:          "/3x3x3/pozycje_klockow.html"
