@@ -5,8 +5,8 @@ blacklist: ["timer.html.twig"]
 title: "KostkaRubika.net - zacznij układać"
 title_short: "KostkaRubika.net"
 
-url: "http://cube.dev.inglot.net.pl"
-assets: "http://cube.dev.inglot.net.pl/assets"
+url: "http://kostkarubika.net"
+assets: "http://kostkarubika.net/assets"
 layout: "_layout/article.html.twig"
 
 ads:
