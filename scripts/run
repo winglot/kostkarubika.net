@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./scripts/server & ./scripts/watch && fg
