@@ -17,6 +17,8 @@
         {% endblock %}
     </head>
     <body>
+        {% include "_layout/elements/google-analytics.html.twig" %}
+
         {% block body %}
             {# Fixed navbar #}
             {% include "_layout/elements/navbar.html.twig" %}
