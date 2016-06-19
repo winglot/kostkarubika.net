@@ -5,7 +5,7 @@ blacklist: []
 title: "KostkaRubika.net - zacznij układać"
 title_short: "KostkaRubika.net"
 
-url: ""
+url: "http://127.0.0.1:8080"
 assets: "/assets"
 layout: "_layout/article.html.twig"
 
