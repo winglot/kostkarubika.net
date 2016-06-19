@@ -1,11 +1,11 @@
 {% extends "_layout/layout.html.twig" %}
 
 {% block title %}
-    {% if page.title is defined and page.title is not empty %}
+    {%- if page.title is defined and page.title is not empty -%}
         {{ page.title ~ " - " ~ site.title_short }}
-    {% else %}
+    {%- else -%}
         {{ parent() }}
-    {% endif %}
+    {%- endif -%}
 {% endblock %}
 
 {% block content %}
