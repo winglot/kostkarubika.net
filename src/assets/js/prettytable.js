@@ -1,5 +1,7 @@
 $(function() {
-    // Style tables
-    $("article table").addClass("table").addClass("table-responsive").addClass("table-striped");
-    $("article table th:first-child").addClass("col-sm-3");
+    table = $("article table");
+    table
+      .addClass("table")
+      .addClass("table-striped")
+      .wrap("<div class=\"table-responsive\"></div>")
 });
