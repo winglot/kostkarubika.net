@@ -43,3 +43,9 @@ article img {
 .centered {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .no-padding {
+    padding: 0;
+  }
+}
