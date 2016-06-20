@@ -48,4 +48,10 @@ article img {
   .no-padding {
     padding: 0;
   }
+
+  p.centered img {
+    width: 100%;
+    max-width: 200px;
+    margin: 5px auto;
+  }
 }

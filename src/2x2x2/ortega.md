@@ -35,7 +35,7 @@ Zastosowane tu algorytmy są identyczne jak dla OLL w metodzie Fridrich (kostka 
 Ostatnim etapem w układaniu metodą Ortega jest spermutowanie obydwóch warstw.
 
 
-| Ilustracja (góra - dół)                                    | Ilustracja  - ogólny podgląd kostki                         | Algorytm                                           |
+| Ilustracja (góra - dół)                                    | Ilustracja  - podgląd                                       | Algorytm                                           |
 | ---------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------- |
 | ![Algorytm 1](%site.assets%/images/2x2x2/ortega/pll/1.png) | ![Algorytm 1](%site.assets%/images/2x2x2/ortega/pll/1a.png) | `(R'F)(R'F2RU'R'F2R2)`                               |
 | ![Algorytm 2](%site.assets%/images/2x2x2/ortega/pll/2.png) | ![Algorytm 2](%site.assets%/images/2x2x2/ortega/pll/2a.png) | `RU'R'U'F2U'RUR'DR2`                                 |
