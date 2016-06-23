@@ -3,6 +3,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  padding-top: 70px;
+}
+
 .navbar-logo {
   color: white;
   font-size: 19px;
