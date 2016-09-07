@@ -6,7 +6,7 @@ title: "KostkaRubika.net - zacznij układać"
 title_short: "KostkaRubika.net"
 
 url: "http://kostkarubika.net"
-assets: "http://kostkarubika.net/assets"
+assets: "//kostkarubika.net/assets"
 layout: "_layout/article.html.twig"
 
 ads:
