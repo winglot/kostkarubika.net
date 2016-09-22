@@ -21,13 +21,13 @@ Cały przebig układania kostki 4x4x4 zaczynamy od własciwego ułożenia wszyst
 
 Przykładowe sytuacje wraz z algorytmami:
 
-| Ilustracja                                        | Alogrytm                   |
-| ------------------------------------------------- | -------------------------- |
-| ![Środki 1](%site.assets%/images/4x4x4/srod1.png) | `(Dd)R2(Dd)'`              |
-| ![Środki 2](%site.assets%/images/4x4x4/srod2.png) | `(Uu)'R'(Uu)`              |
-| ![Środki 3](%site.assets%/images/4x4x4/srod3.png) | `(Ll)'U'F(Ll)R(Dd)R'(Dd)'` |
-| ![Środki 4](%site.assets%/images/4x4x4/srod4.png) | `(Ll)'U'(Ll)(Uu)'R(Uu)`    |
-| ![Środki 5](%site.assets%/images/4x4x4/srod5.png) | `(Uu')R(Uu)(Dd)R(Dd)'`     |
+| Ilustracja                                        | Alogrytm                          |
+| ------------------------------------------------- | --------------------------------- |
+| ![Środki 1](%site.assets%/images/4x4x4/srod1.png) | `(Dd) R2 (Dd)'`                   |
+| ![Środki 2](%site.assets%/images/4x4x4/srod2.png) | `(Uu)' R' (Uu)`                   |
+| ![Środki 3](%site.assets%/images/4x4x4/srod3.png) | `(Ll)' U' F (Ll) R (Dd) R' (Dd)'` |
+| ![Środki 4](%site.assets%/images/4x4x4/srod4.png) | `(Ll)' U' (Ll) (Uu)' R (Uu)`      |
+| ![Środki 5](%site.assets%/images/4x4x4/srod5.png) | `(Uu') R (Uu) (Dd) R (Dd)'`       |
 
 ## Parowanie krawędzi {#parowanie}
 
@@ -35,25 +35,25 @@ Na tym etapie musimy poparowć wszystkie krawędzie w tych samych kolorach aby m
 
 Mamy w sumie 12 par krawędzi. 10 z nich parujemy tym samym sposobem, czyli układamy je w pionie i po skosie względem siebie oraz wykonujemy jeden z dwóch poniższych ruchów w zależnosci od tego gdzie znajduje się jakaś nie ułożona jeszcze para (zaznaczona na żółto) a to po to by żadnej wczesniej ułożonej nie rozwalić.
 
-| Ilustracja                                                   | Alogrytm         |
-| ------------------------------------------------------------ | ---------------- |
-| ![Parowanie 1](%site.assets%/images/4x4x4/parowanie4.png)    | `(Rr)UL'U'(Rr)'` |
-| ![Parowanie 2](%site.assets%/images/4x4x4/parowanie4sym.png) | `(Ll)'U'RU(Ll)`  |
-| ![Parowanie 3](%site.assets%/images/4x4x4/parowanie5.png)    | `(Rr)U'RU(Rr)'`  |
+| Ilustracja                                                   | Alogrytm             |
+| ------------------------------------------------------------ | -------------------- |
+| ![Parowanie 1](%site.assets%/images/4x4x4/parowanie4.png)    | `(Rr) U L' U' (Rr)'` |
+| ![Parowanie 2](%site.assets%/images/4x4x4/parowanie4sym.png) | `(Ll)' U' R U (Ll)`  |
+| ![Parowanie 3](%site.assets%/images/4x4x4/parowanie5.png)    | `(Rr) U' R U (Rr)'`  |
 
 Kolejnym krokiem jest połączenie ostatnich dwóch par, o ile oczywiście przypadkiem niestało sie to wcześniej (zdarza się to dosyć często). Aby to zrobic należy dwie ostatnie pary ułożyć w poziomie i tak aby klocki tych samych kolorów były dokładnie na przeciwko siebie.
 
 Jeżeli są po skosie wykonujemy najpierw kilka ruchów aby je obrócić:
 
-| Ilustracja                                                   | Alogrytm   |
-| ------------------------------------------------------------ | ---------- |
-| ![Ostania para 1](%site.assets%/images/4x4x4/parowanie6.png) | `L'FU'LF`  |
+| Ilustracja                                                   | Alogrytm       |
+| ------------------------------------------------------------ | -------------- |
+| ![Ostania para 1](%site.assets%/images/4x4x4/parowanie6.png) | `L' F U' L F`  |
 
 
 Aż w końcu możemy przejść do ich połączenia:
 | Ilustracja                                                   | Alogrytm           |
 | ------------------------------------------------------------ | ------------------ |
-| ![Ostania para 2](%site.assets%/images/4x4x4/parowanie7.png) | `(Dd)'RF'UR'F(Dd)` |
+| ![Ostania para 2](%site.assets%/images/4x4x4/parowanie7.png) | `(Dd)' R F' U R' F (Dd)` |
 
 ## Błąd parzystości (parity error) {#parity}
 
@@ -61,18 +61,18 @@ W tym etapie nie ma żadnej filozofii. Musimy nauczyć się dwóch algorytmów d
 
 OLL parity:
 
-| Ilustracja                                            | Alogrytm                                           |
-| ----------------------------------------------------- | -------------------------------------------------- |
-| ![OLL parity](%site.assets%/images/4x4x4/parity1.png) | `(Rr)2B2U2(Ll)U2(Rr)'U2(Rr)U2F2(Rr)F2(Ll)'B2(Rr)2` |
+| Ilustracja                                            | Alogrytm                                                         |
+| ----------------------------------------------------- | ---------------------------------------------------------------- |
+| ![OLL parity](%site.assets%/images/4x4x4/parity1.png) | `(Rr)2 B2 U2 (Ll) U2 (Rr)' U2 (Rr) U2 F2 (Rr) F2 (Ll)' B2 (Rr)2` |
 
 PLL parity:
 
-| Ilustracja                                              | Alogrytm          |
-| --------------------------------------------------------| ----------------- |
-| ![PLL parity 1](%site.assets%/images/4x4x4/parity2.png) | `r2U2r2(Uu)2r2u2` |
+| Ilustracja                                              | Alogrytm               |
+| --------------------------------------------------------| ---------------------- |
+| ![PLL parity 1](%site.assets%/images/4x4x4/parity2.png) | `r2 U2 r2 (Uu)2 r2 u2` |
 
 Ostatni przypadek jest dość specyficzny - zostanie rozwiązany w dwóch etapach. W pierwszy wykonuje się na nim taki sam algorytm jak w przypadku PLL parity, a w drugim algorytm z Metody Fridrich - PLL - permutacja N (lub w dowolny znany Tobie sposób):
 
-| Ilustracja                                              | Alogrytm          |
-| --------------------------------------------------------| ----------------- |
-| ![PLL parity 1](%site.assets%/images/4x4x4/parity3.png) | `r2U2r2(Uu)2r2u2` |
+| Ilustracja                                              | Alogrytm               |
+| --------------------------------------------------------| ---------------------- |
+| ![PLL parity 1](%site.assets%/images/4x4x4/parity3.png) | `r2 U2 r2 (Uu)2 r2 u2` |
