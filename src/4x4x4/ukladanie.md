@@ -27,7 +27,7 @@ Przykładowe sytuacje wraz z algorytmami:
 | ![Środki 2](%site.assets%/images/4x4x4/srod2.png) | `(Uu)' R' (Uu)`                   |
 | ![Środki 3](%site.assets%/images/4x4x4/srod3.png) | `(Ll)' U' F (Ll) R (Dd) R' (Dd)'` |
 | ![Środki 4](%site.assets%/images/4x4x4/srod4.png) | `(Ll)' U' (Ll) (Uu)' R (Uu)`      |
-| ![Środki 5](%site.assets%/images/4x4x4/srod5.png) | `(Uu') R (Uu) (Dd) R (Dd)'`       |
+| ![Środki 5](%site.assets%/images/4x4x4/srod5.png) | `(Uu)' R (Uu) (Dd) R (Dd)'`       |
 
 ## Parowanie krawędzi {#parowanie}
 
