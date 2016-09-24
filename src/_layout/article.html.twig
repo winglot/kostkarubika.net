@@ -9,19 +9,19 @@
 {% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-md-12 no-padding">
-            <article class="shadow-z-4">
-                {% set html = page.html %}
+  <div class="mui-row cube-article mui--z4">
+    <div class="mui-col-md-12">
+      <article>
+        {% set html = page.html %}
 
-                {% for name,route in site.routes %}
-                    {% set html = html|replace({('%route.'~name~'%'): site.url ~ route}) %}
-                {% endfor %}
-                {% set html = html|replace({'%site.assets%': site.assets}) %}
-                {% set html = html|replace({'%site.url%': site.url}) %}
+        {% for name,route in site.routes %}
+            {% set html = html|replace({('%route.'~name~'%'): site.url ~ route}) %}
+        {% endfor %}
+        {% set html = html|replace({'%site.assets%': site.assets}) %}
+        {% set html = html|replace({'%site.url%': site.url}) %}
 
-                {{ html }}
-            </article>
-        </div>
+        {{ html }}
+      </article>
     </div>
+  </div>
 {% endblock %}
