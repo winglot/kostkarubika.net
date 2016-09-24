@@ -25,6 +25,7 @@
     {% block body %}
       {# Fixed navbar #}
       {% include "_layout/elements/navbar.html.twig" %}
+      <div class="mui--appbar-height"></div>
 
       {% if "speedcube" in site.ads %}
         {% include "_layout/elements/ads/speedcube.html.twig" %}
@@ -33,7 +34,6 @@
       {# Main content #}
       {% block page %}
         <div id="content" class="mui-container">
-        <div class="mui--appbar-height"></div>
           {% block content %}{% endblock %}
         </div>
       {% endblock %}
