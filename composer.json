@@ -4,7 +4,8 @@
     "type": "project",
 
     "require": {
-        "winglot/cubedrop": "dev-master"
+        "winglot/cubedrop": "dev-master",
+        "leafo/scssphp": "0.6.6"
     },
 
     "repositories": [
