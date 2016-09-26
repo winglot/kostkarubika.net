@@ -55,11 +55,11 @@ Na początek polecam próbę samodzielnego układania bez korzystania z gotowych
 ### EO {#eo}
 Pierwsza cześć z uproszczonego OLLa polega na ułożeniu krawędzi górnej warstwy. Krawędzie utworzą krzyż podobny do tego jak w pierwszym etapie układania na dolnej ściance.
 
-| Ilustracja                                       | Algorytm                  |
-| -------------------------------------------------|---------------------------|
-| ![Algorytm](%site.assets%/images/3x3x3/eo/1.png) | `F(RUR'U')F'`             |
-| ![Algorytm](%site.assets%/images/3x3x3/eo/2.png) | `F(URU'R')F'`             |
-| ![Algorytm](%site.assets%/images/3x3x3/eo/3.png) | `(RU2)(R2FRF')U2(R'FRF')` |
+| Ilustracja                                       | Algorytm                            |
+| -------------------------------------------------|-------------------------------------|
+| ![Algorytm](%site.assets%/images/3x3x3/eo/1.png) | `F (R U R' U') F'`                  |
+| ![Algorytm](%site.assets%/images/3x3x3/eo/2.png) | `F (U R U' R') F'`                  |
+| ![Algorytm](%site.assets%/images/3x3x3/eo/3.png) | `(R U2) (R2 F R F') U2 (R' F R F')` |
 
 ### CO {#co}
 W drugiej część ułożymy narożniki tak aby na górnej ściance otrzymać kolor.
@@ -72,7 +72,7 @@ W drugiej część ułożymy narożniki tak aby na górnej ściance otrzymać ko
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_4.png) | `r'U'RULU'R'U`<br>`FRF'rUR'U'r'`                                                                                                                 |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_5.png) | `RUR'URU2R'`<br>`yL'U2LUL'UL`                                                                                                                    |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_6.png) | `L'U'LU'L'U2L`<br>`(y')RU2R'U'RU'R'`                                                                                                             |
-| ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png) | `x'D(RUR'D')(RU'R')`<br>`(y2)l'URD'R'U'lB`<br>`(y2)xUR'U'LURU'r'`<br>`(y')F'rUR'U'r'FR`<br>`(y)R'F'L'FRF'LF`<br>`(y)R'U'(RUR'F')(RUR'U')(R'FR2)` |
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png) | `(x') D (R U R' D') (R U' R')`<br>`(y2) x U R' U' L U R U' r'`<br>`(y') F' r U R' U' r' F R`<br>`R' F' L' F R F' L F`<br>`R' U' (R U R' F') (R U R' U') (R' F R2)` |
 
 ## Uproszczony PLL {#2look-pll}
 
@@ -80,12 +80,12 @@ Uproszczenie PLL to nic innego jak po prostu wyłuskanie spośród 21 algorytmó
 Najbardziej skrajne uproszczenie składa się z 2 (+2 lutrzane odbicia) algorytmów. Mamy bardzo dużą stratę czasową ponieważ w niektórych
 sytuacjach musimy powtarzać jeden algorytm nawet do trzech razy!
 
-| Ilustracja                                           | Oznaczenie | Algorytm(y)                                                                                  |
-|------------------------------------------------------|------------|----------------------------------------------------------------------------------------------|
-| ![Algorytm U](%site.assets%/images/3x3x3/pll/1.png)  | U          | `(R'UR'U')(R'U'R'U)(RUR2)`<br>`y2M'U2MU'M'U2MU'M'U2M`<br>`y2L'UL'U'L'U'L'ULUL2`              |
-| ![Algorytm U](%site.assets%/images/3x3x3/pll/2.png)  | U          | `(LU'LU)(LULU')(L'U'L2)`<br>`y2M'U2MUM'U2MUM'U2M`<br>`y2RU'RURURU'R'U'R2`<br>`y2M2UMU2M'UM2` |
-| ![Algorytm A](%site.assets%/images/3x3x3/pll/5.png)  | A          | `R'FR'B2RF'R'B2R2`<br>`xR'UR'D2RU'R'D2R2`                                                    |
-| ![Algorytm A](%site.assets%/images/3x3x3/pll/6.png)  | A          | `LF'LB2L'FLB2L2`<br>`yxR2D2RUR'D2RU'R`                                                       |
+| Ilustracja                                           | Oznaczenie | Algorytm(y)                                                                                                                               |
+|------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Algorytm U](%site.assets%/images/3x3x3/pll/1.png)  | U          | `(R' U R' U') (R' U' R' U) (R U R2)`<br>`(y2) M' U2 M U' M' U2 M U' M' U2 M`<br>`(y2) L' U L' U' L' U' L' U L U L2`                       |
+| ![Algorytm U](%site.assets%/images/3x3x3/pll/2.png)  | U          | `(L U' L U) (L U L U') (L' U' L2)`<br>`(y2) M' U2 M U M' U2 M U M' U2 M`<br>`(y2) R U' R U R U R U' R' U' R2`<br>`(y2) M2 U M U2 M' U M2` |
+| ![Algorytm A](%site.assets%/images/3x3x3/pll/5.png)  | A          | `R' F R' B2 R F' R' B2 R2`<br>`(x) R' U R' D2 R U' R' D2 R2`                                                                              |
+| ![Algorytm A](%site.assets%/images/3x3x3/pll/6.png)  | A          | `L F' L B2 L' F L B2 L2`<br>`(y x) R2 D2 R U R' D2 R U' R`                                                                                |
 
 ## Pełny OLL {#full-oll}
 Po tym etapie otrzymamy kolor na górnej ściance kostki. Mamy tutaj 57 algorytmów do nauki. Bez obaw, nie musisz od razu opanowywać wszystkich. Najlepiej zacząć od tych z uproszczenia a następnie na spokojnie dokładać kolejne.
@@ -148,7 +148,7 @@ Po tym etapie otrzymamy kolor na górnej ściance kostki. Mamy tutaj 57 algorytm
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_4.png)  | `r'U'RULU'R'U`<br>`FRF'rUR'U'r'`                                                                                                                 |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_5.png)  | `RUR'URU2R'`<br>`yL'U2LUL'UL`                                                                                                                    |
 | ![Algorytm](%site.assets%/images/3x3x3/oll/4_6.png)  | `L'U'LU'L'U2L`<br>`(y')RU2R'U'RU'R'`                                                                                                             |
-| ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png)  | `x'D(RUR'D')(RU'R')`<br>`(y2)l'URD'R'U'lB`<br>`(y2)xUR'U'LURU'r'`<br>`(y')F'rUR'U'r'FR`<br>`(y)R'F'L'FRF'LF`<br>`(y)R'U'(RUR'F')(RUR'U')(R'FR2)` |
+| ![Algorytm](%site.assets%/images/3x3x3/oll/4_7.png) | `(x') D (R U R' D') (R U' R')`<br>`(y2) x U R' U' L U R U' r'`<br>`(y') F' r U R' U' r' F R`<br>`R' F' L' F R F' L F`<br>`R' U' (R U R' F') (R U R' U') (R' F R2)` |
 
 ## Pełny PLL {#full-pll}
 Ostatni etap na drodze do ułożonej kostki. Dokonujemy permutacji (przemieszczenia) elementów ostatniej warstwy aby ostateczenie ułożyć kostkę. Mamy 21 algorytmów. Warto zacząć od wersji uproszczonej i tak jak w poprzednim etapie - dokładać kolejne. Warto poznać wszystkie 21 algorytmów PLL zanim zaczniemy naukę wszystkich algorytmów OLL.
