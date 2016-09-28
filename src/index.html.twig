@@ -1,21 +1,21 @@
 {% extends '_layout/layout.html.twig' %}
 
 {% block content %}
-<div class="row">
-    <div class="col-md-12">
-        <h3>Tradycyjne Kostki Rubika:</h3>
-    </div>
-    {% include "_layout/elements/tiles/2x2x2.html.twig" with { "color": "material-green" }%}
-    {% include "_layout/elements/tiles/3x3x3.html.twig" with { "color": "material-orange" }%}
-    {% include "_layout/elements/tiles/4x4x4.html.twig" with { "color": "material-red" }%}
-    {% include "_layout/elements/tiles/5x5x5.html.twig" with { "color": "material-blue" }%}
+<div class="mui-row">
+  <div class="mui-col-md-12">
+    <h2>Tradycyjne Kostki Rubika:</h2>
+  </div>
+    {% include "_layout/elements/tiles/2x2x2.html.twig" with { "color": "green" }%}
+    {% include "_layout/elements/tiles/3x3x3.html.twig" with { "color": "orange" }%}
+    {% include "_layout/elements/tiles/4x4x4.html.twig" with { "color": "red" }%}
+    {% include "_layout/elements/tiles/5x5x5.html.twig" with { "color": "blue" }%}
 </div>
-<div class="row">
-    <div class="col-md-12">
-        <h3>Kostki sześcienne i nie tylko:</h3>
-    </div>
-    {% include "_layout/elements/tiles/square.html.twig" with { "color": "material-lime-800" }%}
-    {% include "_layout/elements/tiles/pyraminx.html.twig" with { "color": "material-brown" }%}
-    {% include "_layout/elements/tiles/1x1x2.html.twig" with { "color": "material-green-300" }%}
+<div class="mui-row">
+  <div class="mui-col-md-12">
+    <h2>Kostki sześcienne i nie tylko:</h2>
+  </div>
+    {% include "_layout/elements/tiles/square.html.twig" with { "color": "lime-dark" }%}
+    {% include "_layout/elements/tiles/pyraminx.html.twig" with { "color": "brown" }%}
+    {% include "_layout/elements/tiles/1x1x2.html.twig" with { "color": "green-light" }%}
 </div>
 {% endblock %}

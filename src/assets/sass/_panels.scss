@@ -1,0 +1,23 @@
+.mui-panel {
+  padding: 0;
+
+  > .cube-panel-body {
+    padding: 15px;
+    > h4 {
+      font-size: 18px;
+    }
+  }
+
+  > .cube-panel-heading {
+    padding: 5px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    > .cube-panel-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 16px;
+      color: white;
+    }
+  }
+}

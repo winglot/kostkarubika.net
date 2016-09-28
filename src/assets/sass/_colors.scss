@@ -1,0 +1,23 @@
+$colors: (
+  white: #ffffff,
+  orange: #ff9800,
+  red: #f44336,
+  blue: #2196f3,
+  green: #4caf50,
+  green-light: #81c784,
+  lime-dark: #9e9d24,
+  brown: #795548,
+  brown-dark: #4e342e
+);
+
+@each $name, $color in $colors {
+.cube-bg--#{$name} {
+  background-color: #{$color};
+}
+.cube-text--#{$name} {
+  color: #{$color};
+  &:hover {
+    color: #{$color};
+  }
+}
+}
