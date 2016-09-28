@@ -37,11 +37,7 @@
           {% block content %}{% endblock %}
         </div>
       {% endblock %}
-      <footer>
-        <div class="mui-container mui--text-center">
-          Made with ♥ by <a href="https://www.muicss.com">MUICSS</a>
-        </div>
-      </footer>
+      {% include "_layout/elements/footer.html.twig" %}
     {% endblock %}
 
     {# JS at the end to speed up page load #}
