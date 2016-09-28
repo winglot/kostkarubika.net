@@ -10,6 +10,7 @@ build:
     - apk --update add wget curl git openssh-client php5 php5-curl php5-openssl php5-json php5-phar php5-dom php5-ctype
     - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
     - composer install
+    - php ./vendor/bin/pscss -f compressed src/assets/sass/main.scss > src/assets/css/main.css
     - php ./vendor/bin/cubedrop.php generate --env=prod  
   artifacts:
     paths:
