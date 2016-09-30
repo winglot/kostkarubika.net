@@ -25,4 +25,4 @@ routes:
     c5_ukladanie:       "/5x5x5/ukladanie.html"
     pyraminx_ukladanie: "/pyraminx/ukladanie.html"
     square_ukladanie:   "/square/ukladanie.html"
-
+    pages_cookies:      "/pages/cookies.html"
