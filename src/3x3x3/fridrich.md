@@ -37,7 +37,7 @@ Zalecam naukę pełnego PLLa przed nauką pełnego OLLa. Algorytmy do uproszczon
 
 ## Krzyż (cross) {#cross}
 
-Może się wydawać, że ułożenie krzyża jest banalnie proste ale nie do końca. Samo fakt ułożenia 4 krawędzi jest trywialny o tyle zaplanowanie a następnie faktyczne ułożenie w jak najmniejszej ilości ruchów i czasie już takie proste nie jest. Jedynym sposobem jest po prostu trening. Warto pamiętać, że większość przypadków można rozwiąząć w około 6 ruchach.
+Może się wydawać, że ułożenie krzyża jest banalnie proste ale nie do końca. Sam fakt ułożenia 4 krawędzi jest trywialny o tyle zaplanowanie a następnie faktyczne ułożenie w jak najmniejszej ilości ruchów i czasie już takie proste nie jest. Jedynym sposobem jest po prostu trening. Warto pamiętać, że większość przypadków można rozwiąząć w około 6 ruchach.
 
 ## Dwie pierwsze warstwy (F2L - First Two Layers) {#f2l}
 
