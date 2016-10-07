@@ -27,7 +27,7 @@
       {% include "_layout/elements/navbar.html.twig" %}
       <div class="mui--appbar-height"></div>
 
-      {% if "speedcube" in site.ads %}
+      {% if "speedcube" in site.ads and (page.ads is not defined or page.ads == 'yes') %}
         {% include "_layout/elements/ads/speedcube.html.twig" %}
       {% endif %}
 

@@ -1,5 +1,6 @@
 <!---
 title: "Polityka Prywatności"
+ads: no
 -->
 # Polityka Prywatności
 
@@ -9,7 +10,7 @@ Każda osoba odwiedzająca nasz serwis przyjmuje do wiadomości i akceptuje niż
 
 ## Statystyki serwisu
 
-KostkaRubika.net korzysta z usługi "Google Analytics", zbierającej anonimowe informacje o odwiedzanych stronach serwisu. Szczegółowe zasady dotyczące polityki prywatności "Google Analytics" (w tym informacja jak można zablokować zbieranie danych) znajdują się na stronie: http://www.google.com/intl/pl/analytics/privacyoverview.html .
+KostkaRubika.net korzysta z usługi "Google Analytics", zbierającej anonimowe informacje o odwiedzanych stronach serwisu. Szczegółowe zasady dotyczące polityki prywatności "Google Analytics" (w tym informacja jak można zablokować zbieranie danych) znajdują się na stronie [informacji o usłudze Analytics](https://support.google.com/analytics/answer/6004245).
 
 ## Wykorzystanie plików Cookie
 
