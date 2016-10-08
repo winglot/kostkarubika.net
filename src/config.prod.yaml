@@ -9,6 +9,8 @@ url: "http://kostkarubika.net"
 assets: "//kostkarubika.net/assets"
 layout: "_layout/article.html.twig"
 
+mui_version: 0.7.1
+
 ads:
   - speedcube
 
