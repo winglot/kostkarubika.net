@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+if [ -z "$1" ]; then
+  echo "Missing ENVIRONMENT parameter"
+  exit 1
+fi
+
+composer install
+php ./vendor/bin/pscss -f compressed src/assets/scss/main.scss > src/assets/css/main.css
+php ./vendor/bin/cubedrop.php generate --env=$1

@@ -3,23 +3,19 @@ variables:
   PROD_RELEASE_NAME: release-$CI_BUILD_ID
   STAGE_RELEASE_NAME: stage-$CI_BUILD_ID
 
-generate html:
-  image: alpine:3.4
+generate production html:
+  image: winglot/composer-alpine:1.1.2
+  environment: production
   stage: build
-  script:
-    - apk --update add wget curl git openssh-client php5 php5-curl php5-openssl php5-json php5-phar php5-dom php5-ctype
-    - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
-    - composer install
-    - php ./vendor/bin/pscss -f compressed src/assets/scss/main.scss > src/assets/css/main.css
-    - php ./vendor/bin/cubedrop.php generate --env=prod  
+  script: sh ./scripts/build-env
   artifacts:
     paths:
       - web/
   tags: [docker]
+  only: [master]
 
 deploy to production:
   environment: production
-  image: alpine:3.4
   stage: deploy
   script:
     - mv -v web $PROD_RELEASE_NAME
@@ -28,9 +24,19 @@ deploy to production:
   tags: [shell]
   only: [master]
 
+generate staging html:
+  image: winglot/composer-alpine:1.1.2
+  environment: staging
+  stage: build
+  script: sh ./scripts/build-env stage
+  artifacts:
+    paths:
+      - web/
+  tags: [docker]
+  except: [master]
+
 deploy to staging:
   environment: staging
-  image: alpine:3.4
   stage: deploy
   script:
     - mv -v web $STAGE_RELEASE_NAME
