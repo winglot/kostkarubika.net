@@ -1,6 +1,7 @@
 {  
   "name": "KostkaRubika.net",
   "short_name": "KostkaRubika.net",
+  "background_color": "#eee",
   "icons": [{
         "src": "assets/images/logo-192.png",
         "sizes": "192x192",
