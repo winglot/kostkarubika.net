@@ -7,6 +7,6 @@
         "sizes": "192x192",
         "type": "image/png"
       }],
-  "start_url": "/index.html?utm_source=mobile_web_app",
+  "start_url": "/index.html?homescreen=1",
   "display": "standalone"
 }
