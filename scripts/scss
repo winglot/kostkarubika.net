@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./vendor/bin/pscss -f compressed src/assets/scss/main.scss > src/assets/css/main.css

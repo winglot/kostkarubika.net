@@ -1,3 +1,8 @@
 #!/bin/bash
+BIND_ADDR=127.0.0.1
+BIND_PORT=8080
+WEBROOT=./web
 
-./scripts/server & ./scripts/watch && fg
+php -S $BIND_ADDR:$BIND_PORT -t $WEBROOT & \
+  php ./vendor/bin/cubedrop.php reload ./src $WEBROOT && \
+  fg

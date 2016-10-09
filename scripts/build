@@ -1,3 +1,0 @@
-#!/bin/bash
-
-php ./vendor/bin/cubedrop.php generate ./src ./web
