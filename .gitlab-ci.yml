@@ -7,7 +7,7 @@ generate production html:
   image: winglot/composer-alpine:1.1.2
   environment: production
   stage: build
-  script: sh ./scripts/build-env
+  script: sh ./scripts/build-env prod
   artifacts:
     paths:
       - web/
