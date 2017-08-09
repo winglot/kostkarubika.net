@@ -9,6 +9,10 @@
     },
 
     "repositories": [
-        { "type": "vcs", "url": "git@git.inglot.net.pl:winglot/cubedrop.git" }
+        { 
+          "type": "vcs",
+          "url": "git@github.com:winglot/cubedrop.git",
+          "no-api": true
+        }
     ]
 }
