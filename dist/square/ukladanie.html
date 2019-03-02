@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="//kostkarubika.net/assets/images/logo-small.png">
+    <link rel="canonical" href="http://kostkarubika.net/square/ukladanie.html" itemprop="url">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4e342e">
+    <meta name="description" content="Strona KostkaRubika.net poświęcona jest najlepsze łamigłówce wszechczasów - Kostce Rubika. Kursy, poradniki i opisy dla początkujących i nie tylko." />
+    <meta name="keywords" content="kostka, rubika, rubik, algorytmy, 3x3x3, 3x3, fridrich, 4x4x4, 5x5x5, pyraminx, piramidka, square-1, układanie"/>
+
+        <title itemprop="name">Square-1 - kurs układania - KostkaRubika.net</title>
+
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<link href="//cdn.muicss.com/mui-0.9.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+<link href="//kostkarubika.net/assets/css/main.css" rel="stylesheet" type="text/css">
+      </head>
+  <body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3975745-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+                <header>
+  <div class="mui-appbar mui--appbar-height mui--appbar-line-height cube-bg--brown-dark">
+    <div class="mui-container">
+      <a href="http://kostkarubika.net" class="cube--no-decoration cube-text--white">
+        <img src="//kostkarubika.net/assets/images/logo-small.png">
+        <span class="mui--text-title">KostkaRubika.net</span>
+      </a>
+    </div>
+  </div>
+</header>
+      <div class="mui--appbar-height"></div>
+
+      
+                    <div id="content" class="mui-container">
+            <div class="mui-row cube-article mui--z4">
+    <div class="mui-col-md-12">
+      <article>
+        
+                                                                                                                                                                                                                                                                                            
+        <h1>Kurs układania kostki Square-1</h1>
+
+<p>Square-1 jest dość interesującym rodzajem kostki. Wielu niedoświadczonym osobom już samo pomieszanie sprawia problemy. Aby tego uniknąć musimy zrozumieć jak przemieszczają się poszczególne klocki oraz kiedy i jakie ruchy możemy wykonać.</p>
+
+<h2>Wprowadzenie i notacja</h2>
+
+<p>Przed rozpoczęciem układania ważne jest również zrozumienie zapisu notacji jaki będziemy stosować.</p>
+
+<p>W Square-1 operujemy dwoma warstwami. Górną i dolną, a więc zapis (x,y) oznacza pewien ruch warstwą górną (x) oraz dolną (y). Po każdym z takich nawiasów następuje obrót prawą ścianką o 180 stopni (ruch ten zapisany jest w postaci /). Teraz wystarczy zapamiętać pewien schemat postępowania. Mianowicie, pod x kryje nam się obrót górną warstwą o x&#42;30 stopni (30 stopni - mały klocek - krawędź, 60 stopni - duży klocek - narożnik), a pod y kryje nam się obrót dolną ścianką o y&#42;30 stopni. Jeżeli miara kąta jest dodatnia obracamy zgodnie z ruchem wskazówek zegara, natomiast jeżeli miara ta jest ujemna obracamy w przeciwnym ruchu do wskazówek zegara.</p>
+
+<p>Układanie Square-1 można podzielić na 2 głowne etapy:</p>
+
+<ul>
+<li><a href="#przywrocenie-ksztaltu">Przywrócenie kształtu sześcianu</a> - nazwa mówi za siebie, musimy przywrócić początkowy kształt(sześcian)</li>
+<li>Permutacja i orientacja, która z kolei dzieli się na:
+
+<ul>
+<li><a href="#wstawianie-naroznikow">Wstawianie narożników</a> - wstawiamy narożniki do odpowiednich warstw</li>
+<li><a href="#wstawianie-krawedzi">Wstawianie krawędzi</a> - j/w ale krawędzie</li>
+<li><a href="#permutacja-naroznikow">Permutacja narożników</a> - zamieniamy narożniki miejscami</li>
+<li><a href="#permutacja-krawedzi">Permutacja krawędzi</a> - j/w ale krawędzie</li>
+<li><a href="#poprawa-srodkowej-warstwy">Poprawa środkowej warstwy</a> - ustawiamy odpowiednio środkową warstwę (jeżeli konieczne)</li>
+</ul></li>
+</ul>
+
+<h2 id="przywrocenie-ksztaltu">Przywrócenie kształtu</h2>
+
+<p>Pierwszym etapem podczas układania square-1 jest przywrócenie go pierwotnego kształtu - sześcianu. Poniżej zaprezentowana jest uproszczona wersja tego etapu.</p>
+
+<p>Najprościej będzie zrobić to dwu-etapowo:</p>
+
+<ol>
+<li>Sprowadzenie sześciu narozników do jednej warstwy (powstanie wtedy coś na kształt gwiazdki)</li>
+<li>Przywrócenie kształtu sześcianu.</li>
+</ol>
+
+<p>Gdy już mamy "gwiazdkę" odszukujemy kształt drugiej warstwy na rysunkach poniżej, ustawiamy go na górnej warstwie i wykonujemy algorytm.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/1_1.png" alt="Przypadek 1" /></td>
+  <td><code>/ (-2,-4) / (-1,-2) / (-3,-3) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/1_2.png" alt="Przypadek 2" /></td>
+  <td><code>/ (2,-2) / (-3,-4) / (4,-3) / (-5,-4) / (6,-3) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/1_3.png" alt="Przypadek 3" /></td>
+  <td><code>/ (-4,-2) / (-1,4) / (-3,0) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/1_4.png" alt="Przypadek 4" /></td>
+  <td><code>/ (-4,0) / (5,4) / (2,-3) / (-5,-4) / (6,-3) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/1_5.png" alt="Przypadek 5" /></td>
+  <td><code>/ (2,2) / (0,-1) / (3,3) /</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="wstawianie-naroznikow">Wstawianie narożników (orientacja)</h2>
+
+<p>Po przywróceniu square'a do porządanego kształtu czas na wstawienie narożników w odpowiednie miejsca.</p>
+
+<p>Poniżej znajdują się możliwe sytuacje i algorytmy do nich. Po lewej to górna ścianka a po prawej dolna.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja (góra/dół)</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/2_1.png" alt="Przypadek 1" /></td>
+  <td><code>(1,0) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/2_2.png" alt="Przypadek 2" /></td>
+  <td><code>(1,0) / (3,3) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/2_3.png" alt="Przypadek 3" /></td>
+  <td><code>(1,0) / (0,3) / (0,3) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/2_4.png" alt="Przypadek 4" /></td>
+  <td><code>(1,0) / (3,0) / (-1,0)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="wstawianie-krawedzi">Wstawianie krawędzi (orientacja)</h2>
+
+<p>Celem tego etapu jest zakończenie układania koloru zarówno na dolnej jak i na górnej ściance.
+Poniżej znajdują się sytuacje i algorytmy, za pomocą których osiągniemy nasz cel (po lewej to górna a po prawej dolna ścianka).</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja (góra/dół)</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/3_1.png" alt="Przypadek 1" /></td>
+  <td><code>(0,-1) / (-3,0) / (4,1) / (-4,-1) / (3,0) / (0,-1)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/3_2.png" alt="Przypadek 2" /></td>
+  <td><code>(1,0) / (-3,0) / (-1,-1) / (4,1) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/3_3.png" alt="Przypadek 3" /></td>
+  <td><code>(0,-1) / (3,0) / (-3,0) / (1,-2) / (0,3) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/3_4.png" alt="Przypadek 4" /></td>
+  <td><code>(0,-1) / (1,1) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/3_5.png" alt="Przypadek 4" /></td>
+  <td><code>(0,-1) / (1,4) / (-1,-4) / (-3,0) / (4,1) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/3_6.png" alt="Przypadek 4" /></td>
+  <td><code>(0,-1) / (1,1) / (3,3) / (-1,-1) / (0,1)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="permutacja-naroznikow">Permutacja narożników</h2>
+
+<p>Po uzyskaniu koloru na górnej i dolnej ściance musimy pozamieniać miejscami narożniki.</p>
+
+<p>Poniżej znajdują się sytuacje i algorytmy do nich.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja (góra/dół)</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/4_1.png" alt="Przypadek 1" /></td>
+  <td><code>/ (3,-3) / (3,0) / (-3,0) / (0,3) / (-3,0) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/4_2.png" alt="Przypadek 2" /></td>
+  <td><code>/ (3,3) / (3,0) / (3,3) / (3,0) / (3,3) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/4_3.png" alt="Przypadek 3" /></td>
+  <td><code>/ (-3,0) / (3,3) / (0,-3) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/4_4.png" alt="Przypadek 4" /></td>
+  <td><code>/ (3,-3) / (3,-3) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/4_5.png" alt="Przypadek 4" /></td>
+  <td><code>/ (3,0) / (-3,0) / (3,0) / (-3,0) /</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="permutacja-krawedzi">Permutacja krawędzi</h2>
+
+<p>Powoli zbliżamy się do końca. Przedostatnim krokiem będzie spermutowanie krawędzi.</p>
+
+<p>Poniżej znajdują się sytuacje i algorytmy do nich.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja (góra/dół)</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_1.png" alt="Przypadek 1" /></td>
+  <td><code>/ (-3,0) / (0,3) / (0,-3) / (0,3) / (2,0) / (0,2) / (-2,0) / (4,0) / (0,-2) / (0,2) / (-1,4) / (0,-3) / (0,3)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_2.png" alt="Przypadek 2" /></td>
+  <td><code>/ (3,3) / (-1,0) / (2,-4) / (4,-2) / (0,-2) / (-4,2) / (1,-5) / (3,0) / (3,3) / (3,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_3.png" alt="Przypadek 3" /></td>
+  <td><code>/ (3,0) / (1,0) / (0,-3) / (-1,0) / (-3,0) / (1,0) / (0,3) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_4.png" alt="Przypadek 4" /></td>
+  <td><code>(1,0) / (0,-3) / (-1,0) / (3,0) / (1,0) / (0,3) / (-1,0) / (-3,0) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_5.png" alt="Przypadek 4" /></td>
+  <td><code>/ (3,3) / (0,3) / (1,1) / (-1,4) / (-3,3) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_6.png" alt="Przypadek 4" /></td>
+  <td><code>/ (3,-3) / (3,-3) / (0,1) / (-3,3) / (-3,3) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_7.png" alt="Przypadek 4" /></td>
+  <td><code>/ (-3,-3) / (0,1) / (-2,2) / (0,2) / (-4,-4) / (-1,0) / (-3,-3) / (0,2) / (-2,-2) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_8.png" alt="Przypadek 4" /></td>
+  <td><code>(1,0) / (2,2) / (0,-2) / (3,3) / (1,0) / (4,4) / (0,-2) / (2,2) / (0,-1) / (3,3) /</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_9.png" alt="Przypadek 4" /></td>
+  <td><code>(0,-1) / (1,-2) / (-4,0) / (0,3) / (1,0) / (3,-2) / (-4,0) / (-4,0) / (-2,2) / (-1,0) / (0,3) / (-3,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_10.png" alt="Przypadek 4" /></td>
+  <td><code>(1,0) / (0,3) / (-1,-1) / (1,-2) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_11.png" alt="Przypadek 4" /></td>
+  <td><code>(1,0) / (0,-1) / (0,-3) / (5,0) / (-5,0) / (0,3) / (0,1) / (5,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/5_12.png" alt="Przypadek 4" /></td>
+  <td><code>(1,0) / (5,-1) / (-5,1) / (5,0)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="poprawa-srodkowej-warstwy">Poprawienie środkowej warstwy</h2>
+
+<p>Może się zdarzyć tak, że trzeba będzie poprawić środkową warstę po zakończonym układaniu.</p>
+
+<p>Poniżej znajdują się przypadki i algorytmy.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/6_1.png" alt="Przypadek 1" /></td>
+  <td><code>(1,0) / (6,6) / (-1,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/6_2.png" alt="Przypadek 2" /></td>
+  <td><code>/ (6,0) / (6,0) / (6,0)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/square/6_3.png" alt="Przypadek 3" /></td>
+  <td><code>/ (6,0) / (0,6) / (-1,5)</code></td>
+</tr>
+</tbody>
+</table>
+
+      </article>
+    </div>
+  </div>
+        </div>
+            <footer>
+  <div class="mui-container mui--text-center">
+    <a href="http://kostkarubika.net">KostkaRubika.net</a> | <a href="http://kostkarubika.net/pages/cookies.html">Polityka Prywatności</a>
+  </div>
+</footer>
+    
+                <script src="//cdn.muicss.com/mui-0.9.1/js/mui.min.js" type="text/javascript"></script>
+<script src="//kostkarubika.net/assets/js/prettytable.js" type="text/javascript"></script>
+      </body>
+</html>

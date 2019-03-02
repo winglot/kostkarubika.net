@@ -1,5 +1,5 @@
 vendor
 !.gitkeep
-web
 bin
 *.swp
+dist-dev

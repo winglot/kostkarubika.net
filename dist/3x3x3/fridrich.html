@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="//kostkarubika.net/assets/images/logo-small.png">
+    <link rel="canonical" href="http://kostkarubika.net/3x3x3/fridrich.html" itemprop="url">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4e342e">
+    <meta name="description" content="Strona KostkaRubika.net poświęcona jest najlepsze łamigłówce wszechczasów - Kostce Rubika. Kursy, poradniki i opisy dla początkujących i nie tylko." />
+    <meta name="keywords" content="kostka, rubika, rubik, algorytmy, 3x3x3, 3x3, fridrich, 4x4x4, 5x5x5, pyraminx, piramidka, square-1, układanie"/>
+
+        <title itemprop="name">Kostka 3x3x3 - układanie metodą Fridrich - KostkaRubika.net</title>
+
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<link href="//cdn.muicss.com/mui-0.9.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+<link href="//kostkarubika.net/assets/css/main.css" rel="stylesheet" type="text/css">
+      </head>
+  <body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3975745-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+                <header>
+  <div class="mui-appbar mui--appbar-height mui--appbar-line-height cube-bg--brown-dark">
+    <div class="mui-container">
+      <a href="http://kostkarubika.net" class="cube--no-decoration cube-text--white">
+        <img src="//kostkarubika.net/assets/images/logo-small.png">
+        <span class="mui--text-title">KostkaRubika.net</span>
+      </a>
+    </div>
+  </div>
+</header>
+      <div class="mui--appbar-height"></div>
+
+      
+                    <div id="content" class="mui-container">
+            <div class="mui-row cube-article mui--z4">
+    <div class="mui-col-md-12">
+      <article>
+        
+                                                                                                                                                                                                                                                                                            
+        <h1>Kurs układania kostki 3x3x3 metodą Fridrich</h1>
+
+<p>Metoda Fridrich jest najpopularniejszym sposobem układania standardowej kostki 3x3x3. Jest ona rozwinięciem metody LBL poprzez połączenie kilku etapów w jeden. Pozwala znacznie zredukować osiągany czas ale powoduje, że musimy zapoznać się z 78. algorytmami (OLL - 57, PLL - 21).</p>
+
+<h2>Wprowadzenie</h2>
+
+<p>Tak prezentuje się podział etapów układania:</p>
+
+<ul>
+<li><a href="#cross" title="Krzyż">Krzyż (tzw. cross)</a> - ułożenie krawędzi pierwszej warstwy tak aby były zgodne ze środkami ścianek bocznych.</li>
+<li><a href="#f2l" title="F2L">F2L (first two layers)</a> - wstawianie rogów i odpowiadających im krawędzi jednocześnie do odpowiedniego "slotu".</li>
+<li><a href="#full-oll" title="OLL">OLL</a> - orientowanie rogów i krawędzi ostatniej warstwy tak aby otrzymać cały kolor. Tutaj już niestety zaczynają się schody. Na pierwszy rzut oka, gdy zwykły śmiertelnik widzi 57 algorytmów do nauczenia to niemalże mdleje. Specjalnie dla takich osób powstało uproszczenie, które ma na celu rozbicie OLL na 2 etapy przez co ilość algorytmów spada do 10! Odrazu lepiej? Jednak z tą zmianą wiążą się także słabsze czasy.</li>
+<li><a href="#full-pll" title="PLL">PLL</a> - permutacja rogów i krawędzi ostatniej warstwy czyli inaczej zamiana miejscami odpowiednich klocków aby otrzymać gotową kostkę! 21 algów można uprościć do 2 (choć jeżeli już upraszczać to najlepiej do około 6-7) ale z dosyć sporą stratą czasową.</li>
+</ul>
+
+<p>Uproszczenie:</p>
+
+<ul>
+<li><a href="#eo" title="EO">EO</a> - orientacja krawędzi. Najpierw orientujemy krawędzie. Możliwych przypadków jest 3.</li>
+<li><a href="#co" title="CO">CO</a> - orientacja rogów. W nagrodę otrzymujemy cały kolor! Algorytmów mamy 7.</li>
+<li><a href="#2look-pll" title="PLL">PLL</a> - uproszczona wersja pll'a. Tylko 2 algorytmy ale niestety wymagające powtórzenia.</li>
+</ul>
+
+<h2>Kolejność nauki</h2>
+
+<p>Nauka algorytymów w odpowiedniej kolejności pozwoli cieszyć się z układania kostki a zarazem systematycznie osiągać lepsze czasy. Sugerowana przeze mnie kolejność jest następująca:</p>
+
+<ul>
+<li><a href="#cross">Krzyż</a></li>
+<li><a href="#f2l">F2L (intuicyjnie)</a></li>
+<li><a href="#2look-oll">Uproszczony OLL</a> (<a href="#eo">EO</a>, <a href="#co">CO</a>)</li>
+<li><a href="#2look-pll">Uproszczony PLL</a></li>
+<li><a href="#full-pll">Pełny PLL</a></li>
+<li><a href="#full-oll">Pełny OLL</a></li>
+<li><a href="#f2l">F2L (algorytmy)</a></li>
+</ul>
+
+<p>Zalecam naukę pełnego PLLa przed nauką pełnego OLLa. Algorytmy do uproszczonego OLLa (EO i CO) są stosunkowo szybkie przez co nauka pozostałych na początku nie da dużego obniżenia czasów układania.</p>
+
+<h2 id="cross">Krzyż (cross)</h2>
+
+<p>Może się wydawać, że ułożenie krzyża jest banalnie proste ale nie do końca. Sam fakt ułożenia 4 krawędzi jest trywialny o tyle zaplanowanie a następnie faktyczne ułożenie w jak najmniejszej ilości ruchów i czasie już takie proste nie jest. Jedynym sposobem jest po prostu trening. Warto pamiętać, że większość przypadków można rozwiąząć w około 6 ruchach.</p>
+
+<h2 id="f2l">Dwie pierwsze warstwy (F2L - First Two Layers)</h2>
+
+<p>F2L jest to etap polegający na jednoczesnym wstawianiu odpowiedniego narożnika i krawędzi w przeznaczone im miejsce. Dzieki temu otrzymujemy od razu gotowe dwie warstwy.</p>
+
+<p>Mimo dużej ilości przypadków, opanowanie tego etapu w stopniu zadowalającym nie jest trudne. Większość jest stosunkowo łatwa w rozwiązaniu i dlatego można zastosować jedną z dwóch metod nauki:</p>
+
+<ul>
+<li>wymyślenie własnych algorytmów (intuicyjnie)</li>
+<li>skorzystanie z gotowych algorytmów</li>
+</ul>
+
+<p>Na początek polecam próbę samodzielnego układania bez korzystania z gotowych algorytmów. Na pewno nic na tym nie stracicie a można zyskać dużą przyjemność i satysfakcję z ułożonej kostki.</p>
+
+<h2 id="2look-oll">Uproszczony OLL</h2>
+
+<h3 id="eo">EO</h3>
+
+<p>Pierwsza cześć z uproszczonego OLLa polega na ułożeniu krawędzi górnej warstwy. Krawędzie utworzą krzyż podobny do tego jak w pierwszym etapie układania na dolnej ściance.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/eo/1.png" alt="Algorytm" /></td>
+  <td><code>F (R U R' U') F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/eo/2.png" alt="Algorytm" /></td>
+  <td><code>F (U R U' R') F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/eo/3.png" alt="Algorytm" /></td>
+  <td><code>(R U2) (R2 F R F') U2 (R' F R F')</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="co">CO</h3>
+
+<p>W drugiej część ułożymy narożniki tak aby na górnej ściance otrzymać kolor.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_1.png" alt="Algorytm" /></td>
+  <td><code>(y2) z' (U' R U R' U' R U) L' (U' R' U R U' R' U)</code><br><code>(R2 D') (R U2 R' D) (R U2 R)</code><br><code>(y2) (R2 D) (R' U2) (R D') (R' U2 R')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_2.png" alt="Algorytm" /></td>
+  <td><code>R' U' R U' R' U R U' R' U2 R</code><br><code>(y') R U2 R' U' R U R' U' R U' R'</code><br><code>(y) F (R U R' U') (R U R' U') (R U R' U') F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_3.png" alt="Algorytm" /></td>
+  <td><code>R U2 R2 U' R2 U' R2 U2 R</code><br><code>(R' U) (L U') (R U') (L' U' L U' L')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_4.png" alt="Algorytm" /></td>
+  <td><code>r' U' R U L U' R' U</code><br><code>F R F' r U R' U' r'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_5.png" alt="Algorytm" /></td>
+  <td><code>R U R' U R U2 R'</code><br><code>y L' U2 L U L' U L</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_6.png" alt="Algorytm" /></td>
+  <td><code>L' U' L U' L' U2 L</code><br><code>(y') R U2 R' U' R U' R'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_7.png" alt="Algorytm" /></td>
+  <td><code>(x') D (R U R' D') (R U' R')</code><br><code>(y2) x U R' U' L U R U' r'</code><br><code>(y') F' r U R' U' r' F R</code><br><code>R' F' L' F R F' L F</code><br><code>R' U' (R U R' F') (R U R' U') (R' F R2)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="2look-pll">Uproszczony PLL</h2>
+
+<p>Uproszczenie PLL to nic innego jak po prostu wyłuskanie spośród 21 algorytmów tych, które pozwolą nam wykonać wszystkie przypadki.
+Najbardziej skrajne uproszczenie składa się z 2 (+2 lutrzane odbicia) algorytmów. Mamy bardzo dużą stratę czasową ponieważ w niektórych
+sytuacjach musimy powtarzać jeden algorytm nawet do trzech razy!</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Oznaczenie</th>
+  <th>Algorytm(y)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/1.png" alt="Algorytm U" /></td>
+  <td>U</td>
+  <td><code>(R' U R' U') (R' U' R' U) (R U R2)</code><br><code>(y2) M' U2 M U' M' U2 M U' M' U2 M</code><br><code>(y2) L' U L' U' L' U' L' U L U L2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/2.png" alt="Algorytm U" /></td>
+  <td>U</td>
+  <td><code>(L U' L U) (L U L U') (L' U' L2)</code><br><code>(y2) M' U2 M U M' U2 M U M' U2 M</code><br><code>(y2) R U' R U R U R U' R' U' R2</code><br><code>(y2) M2 U M U2 M' U M2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/5.png" alt="Algorytm A" /></td>
+  <td>A</td>
+  <td><code>R' F R' B2 R F' R' B2 R2</code><br><code>(x) R' U R' D2 R U' R' D2 R2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/6.png" alt="Algorytm A" /></td>
+  <td>A</td>
+  <td><code>L F' L B2 L' F L B2 L2</code><br><code>(y x) R2 D2 R U R' D2 R U' R</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="full-oll">Pełny OLL</h2>
+
+<p>Po tym etapie otrzymamy kolor na górnej ściance kostki. Mamy tutaj 57 algorytmów do nauki. Bez obaw, nie musisz od razu opanowywać wszystkich. Najlepiej zacząć od tych z uproszczenia a następnie na spokojnie dokładać kolejne.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm(y)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/1_1.png" alt="Algorytm" /></td>
+  <td><code>x' (r R' U') y' (R' U) (R U R U R' d') (r' R)</code><br><code>M U R U R' U' M2 U R U' r'</code><br><code>r' (R U) (R U R' U' r2) (R2' U) (R U') r'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/1_2.png" alt="Algorytm" /></td>
+  <td><code>(R U2) (R2 F R F') U2(R' F R F')</code><br><code>(R U) B' (l U l' R' U') (R' F R F')</code><br><code>R U2 R2 y' x' (R U R') x y U2 R' y (L' F L')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/1_3.png" alt="Algorytm" /></td>
+  <td><code>x (R' U R U') B2(R' U R U2) y (R2 U)</code><br><code>(y) F (R U R' U') S (R U R' U') f'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/1_4.png" alt="Algorytm" /></td>
+  <td><code>(R r' U' r U2 r' U') (R U' R2) L</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/1_5.png" alt="Algorytm" /></td>
+  <td><code>(L' l U l' U2 l U) (L' U L2) R'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/1_6.png" alt="Algorytm" /></td>
+  <td><code>(R' F R F') U' (r R') y' (R' U l Us)</code><br><code>y2 R U R' U R' F R F' U2 R' F R F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/1_7.png" alt="Algorytm" /></td>
+  <td><code>(R U2) B' (R' U' R U) y (R2 U2 R' F')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/1_8.png" alt="Algorytm" /></td>
+  <td><code>F (R U R' U) y' (R' U2) (R' F R F')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_1.png" alt="Algorytm" /></td>
+  <td><code>(R' U2) (R2 U) (R' U R U2) x' (U' R' U)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_2.png" alt="Algorytm" /></td>
+  <td><code>x (r' R U R' U' r) (R' U R U')</code><br><code>(R U R' U') (M U R U') r'</code><br><code>M' U' M U M' U' M U' M' U2 M</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_3.png" alt="Algorytm" /></td>
+  <td><code>F (R U R' U' R) y' (R' F R B' R' F')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_4.png" alt="Algorytm" /></td>
+  <td><code>(R' U' R U' R' d) (R' U l U)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_5.png" alt="Algorytm" /></td>
+  <td><code>F (U R U' R' U R U' R') F'</code><br><code>(y2) f (R U R' U') (R U R' U') f'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_6.png" alt="Algorytm" /></td>
+  <td><code>x' (R U' R' F' R U R') x y (R' U R)</code><br><code>y2 F U R U2 R' U' R U R' F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_7.png" alt="Algorytm" /></td>
+  <td><code>x' (L' U L F L' U' L) x y' (L U' L')</code><br><code>y2 F' U' L' U2 L U L' U' L F</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_8.png" alt="Algorytm" /></td>
+  <td><code>(r' U' r) (R' U' R U) (r' U r)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_9.png" alt="Algorytm" /></td>
+  <td><code>(l U l') (L U L' U') (l U l')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_10.png" alt="Algorytm" /></td>
+  <td><code>F (R U R' U') F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_11.png" alt="Algorytm" /></td>
+  <td><code>R U R' U' R' F R F'</code><br><code>R U R' F2 L F L' U' F</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_12.png" alt="Algorytm" /></td>
+  <td><code>(R' U' R U) x' D (R U' R' Us)</code><br><code>(y2) R U R2 U' R' F R U R U' F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_13.png" alt="Algorytm" /></td>
+  <td><code>(R' F R U R' d') L' d R</code><br><code>R' F R U R' U' F' U R</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_14.png" alt="Algorytm" /></td>
+  <td><code>(L F' L' U' L d) R d' L'</code><br><code>L F' L' U' L U F U' L'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/2_15.png" alt="Algorytm" /></td>
+  <td><code>(R U) x' (R U' R' U) x (U' R')</code><br><code>R' U' R' F R F' U R</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_1.png" alt="Algorytm" /></td>
+  <td><code>R' (L F' L') (R U2 R') (L F' L') R</code><br><code>(y') M' U M U2 M' U M</code><br><code>(y) r U R' U' r' R U R U' R'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_2.png" alt="Algorytm" /></td>
+  <td><code>l U L' U L U' L' U L U2 l'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_3.png" alt="Algorytm" /></td>
+  <td><code>r' U' R U' R' U R U' R' U2 r</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_4.png" alt="Algorytm" /></td>
+  <td><code>x' (L' U L') (U' L2) b' F' (L' U L U')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_5.png" alt="Algorytm" /></td>
+  <td><code>x' U' (R U2) (l' U2) (R' U2 l U')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_6.png" alt="Algorytm" /></td>
+  <td><code>F (R U R' U' R U R' U') F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_7.png" alt="Algorytm" /></td>
+  <td><code>F' (L' U' L U L' U' L U) F</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_8.png" alt="Algorytm" /></td>
+  <td><code>(r' U') (R U' R' U2 r)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_9.png" alt="Algorytm" /></td>
+  <td><code>(l U) (L' U L U2 l')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_10.png" alt="Algorytm" /></td>
+  <td><code>F (R U R' U') F' y F (R U R' U') F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_11.png" alt="Algorytm" /></td>
+  <td><code>F' (L' U' L U) F y' F' (L' U' L U) F</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_12.png" alt="Algorytm" /></td>
+  <td><code>(R U R') y x (R' U l U' l' U' R)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_13.png" alt="Algorytm" /></td>
+  <td><code>(L' U' L) y' x (L U' r' U r U L')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_14.png" alt="Algorytm" /></td>
+  <td><code>(L' U' L) y' x (L U' r' U r U L')</code><br><code>U F R' F' R U R U' R'</code><br><code>y F R U' R' U' R U R' F</code><br><code>y R' F R F' U' F' U F</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_15.png" alt="Algorytm" /></td>
+  <td><code>(R U2) (R2 F R F' R U2 R')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_16.png" alt="Algorytm" /></td>
+  <td><code>(r' U2) (R U R' U r)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_17.png" alt="Algorytm" /></td>
+  <td><code>(l U2) (L' U' L U' l')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_18.png" alt="Algorytm" /></td>
+  <td><code>(F R') (F R2 U' R' U' R U R' F2)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_19.png" alt="Algorytm" /></td>
+  <td><code>(F' L) (F' L2 U L U L' U' L F2)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_20.png" alt="Algorytm" /></td>
+  <td><code>(R' U) (R U2 R' d') (L' U L d R)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_21.png" alt="Algorytm" /></td>
+  <td><code>(L U') (L' U2 L d) (R U' R' d' L')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_22.png" alt="Algorytm" /></td>
+  <td><code>(R d) (L U' r' U')</code><br><code>(y) F U R U' R' F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_23.png" alt="Algorytm" /></td>
+  <td><code>(L' d') (R' U l U)</code><br><code>(y') F' U' L' U L F</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_24.png" alt="Algorytm" /></td>
+  <td><code>(R d) (L' d') (R' U l U l')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_25.png" alt="Algorytm" /></td>
+  <td><code>(L' d') (R d) (L U' r' U' r)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_26.png" alt="Algorytm" /></td>
+  <td><code>(y2) L' U' L U' L' U L U' L F' L' F</code><br><code>(R' U' R U' R' U R) U x' (R U' R' U)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/3_27.png" alt="Algorytm" /></td>
+  <td><code>(y2) R U R' U R U' R' U' R' F R F'</code><br><code>(L U L' U L U' L') U' x' (L' U L U')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_1.png" alt="Algorytm" /></td>
+  <td><code>(y2) z' (U' R U R' U' R U) L' (U' R' U R U' R' U)</code><br><code>(R2 D') (R U2 R' D) (R U2 R)</code><br><code>(y2) (R2 D) (R' U2) (R D') (R' U2 R')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_2.png" alt="Algorytm" /></td>
+  <td><code>R' U' R U' R' U R U' R' U2 R</code><br><code>(y') R U2 R' U' R U R' U' R U' R'</code><br><code>(y) F (R U R' U') (R U R' U') (R U R' U') F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_3.png" alt="Algorytm" /></td>
+  <td><code>R U2 R2 U' R2 U' R2 U2 R</code><br><code>(R' U) (L U') (R U') (L' U' L U' L')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_4.png" alt="Algorytm" /></td>
+  <td><code>r' U' R U L U' R' U</code><br><code>F R F' r U R' U' r'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_5.png" alt="Algorytm" /></td>
+  <td><code>R U R' U R U2 R'</code><br><code>y L' U2 L U L' U L</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_6.png" alt="Algorytm" /></td>
+  <td><code>L' U' L U' L' U2 L</code><br><code>(y') R U2 R' U' R U' R'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/oll/4_7.png" alt="Algorytm" /></td>
+  <td><code>(x') D (R U R' D') (R U' R')</code><br><code>(y2) x U R' U' L U R U' r'</code><br><code>(y') F' r U R' U' r' F R</code><br><code>R' F' L' F R F' L F</code><br><code>R' U' (R U R' F') (R U R' U') (R' F R2)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="full-pll">Pełny PLL</h2>
+
+<p>Ostatni etap na drodze do ułożonej kostki. Dokonujemy permutacji (przemieszczenia) elementów ostatniej warstwy aby ostateczenie ułożyć kostkę. Mamy 21 algorytmów. Warto zacząć od wersji uproszczonej i tak jak w poprzednim etapie - dokładać kolejne. Warto poznać wszystkie 21 algorytmów PLL zanim zaczniemy naukę wszystkich algorytmów OLL.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Oznaczenie</th>
+  <th>Algorytm(y)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/1.png" alt="Algorytm U" /></td>
+  <td>U</td>
+  <td><code>(R' U R' U') (R' U' R' U) (R U R2)</code><br><code>(y2) M' U2 M U' M' U2 M U' M' U2 M</code><br><code>(y2) L' U L' U' L' U' L' U L U L2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/2.png" alt="Algorytm U" /></td>
+  <td>U</td>
+  <td><code>(L U' L U) (L U L U') (L' U' L2)</code><br><code>(y2) M' U2 M U M' U2 M U M' U2 M</code><br><code>(y2) R U' R U R U R U' R' U' R2</code><br><code>(y2) M2 U M U2 M' U M2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/3.png" alt="Algorytm H" /></td>
+  <td>H</td>
+  <td><code>M2 U M2 U2 M2 U M2</code><br><code>R2 U2 R2 U2 R2 U R2 U2 R2 U2 R2 U'</code><br><code>x2 M2 d M2 d2 M2 d M2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/4.png" alt="Algorytm Z" /></td>
+  <td>Z</td>
+  <td><code>x' (R U' R' U) (D R' D) U' (R' U R) (D2 F)</code><br><code>M2 D y M2 D' y' S M2 S'</code><br><code>U R' (U' R U' R) (U R U' R') (U R U R2) (U' R' U)</code><br><code>U2 M2 U M2 U M' U2 M2 U2 M'</code><br><code>R U R' U R' U' R' U R U' R' U' R2 U R U2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/5.png" alt="Algorytm A" /></td>
+  <td>A</td>
+  <td><code>R' F R' B2 R F' R' B2 R2</code><br><code>x R' U R' D2 R U' R' D2 R2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/6.png" alt="Algorytm A" /></td>
+  <td>A</td>
+  <td><code>L F' L B2 L' F L B2 L2</code><br><code>y x R2 D2 R U R' D2 R U' R</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/7.png" alt="Algorytm E" /></td>
+  <td>E</td>
+  <td><code>x (U R' U' L) (U R U' r2 U' R U) (L U') (R' U)</code><br><code>(z) U2(R2 F) (R U R' U' R U R' U' R U R' U') F' (R2 U2)</code><br><code>x U R' U' L U R U' L' U R U' L U R' U' L'</code><br><code>Fl' U' L U R U' r' F R F' r U R' U' r'</code><br><code>F R' F' r U R U' r' F R F' r U R' U' r'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/8.png" alt="Algorytm J" /></td>
+  <td>J</td>
+  <td><code>B2 R' U' R B2 L' D L' D' L2</code><br><code>y2 R' U2 R U R' U2 L U' R U L'</code><br><code>U R' U L' U2 R U' R' U2 R L</code><br><code>U R' U L' U2 R U' R' U2 R L U2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/9.png" alt="Algorytm J" /></td>
+  <td>J</td>
+  <td><code>B2 L U L' B2 R D' R D R2</code><br><code>U' L U' R U2 L' U L U2 R' L'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/10.png" alt="Algorytm R" /></td>
+  <td>R</td>
+  <td><code>(R' U2) (R U2) (R' F R U R' U' R' F' R2)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/11.png" alt="Algorytm R" /></td>
+  <td>R</td>
+  <td><code>(L U2) (L' U2) (L F' L' U' L U L F L2)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/12.png" alt="Algorytm G" /></td>
+  <td>G</td>
+  <td><code>(R U R') y' (R2 u' R U') (R' U R' u R2)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/13.png" alt="Algorytm G" /></td>
+  <td>G</td>
+  <td><code>(L' U' L) y (L2 u L' U) (L U' Lu' L2)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/14.png" alt="Algorytm G" /></td>
+  <td>G</td>
+  <td><code>(R2 u) (R' U R' U' Ru' R2) y (L' U L)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/15.png" alt="Algorytm G" /></td>
+  <td>G</td>
+  <td><code>(L2 u') (L U' L U L' u L2) y' (R U' R')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/16.png" alt="Algorytm N" /></td>
+  <td>N</td>
+  <td><code>(L U') (R U2) (L' U L) (R' U' R) U2 L' U R'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/17.png" alt="Algorytm N" /></td>
+  <td>N</td>
+  <td><code>(R' U) (L' U2) (R U' R') (L U L') U2 R U' L</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/18.png" alt="Algorytm T" /></td>
+  <td>T</td>
+  <td><code>(R U R' U' R' F R2 U' R' U') (R U R' F')</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/19.png" alt="Algorytm Y" /></td>
+  <td>Y</td>
+  <td><code>(R2 U' R2 U' R2 U) y' (R U R') B2(R U' R')</code><br><code>F R U' R' U' R U R' F' R U R' U' R' F R F'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/20.png" alt="Algorytm F" /></td>
+  <td>F</td>
+  <td><code>(R' U R U' R2) y' (R' U' R U) y x (R U R' U' Rl)</code><br><code>R' U R U' R2 F' U' F U R x U R' U' R2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/3x3x3/pll/21.png" alt="Algorytm V" /></td>
+  <td>V</td>
+  <td><code>L' U R U' L U L' U R' U' L U2 R U2 R'</code><br><code>y' R' U R' U' y R' F' R2 U' R' U R' F R F</code></td>
+</tr>
+</tbody>
+</table>
+
+      </article>
+    </div>
+  </div>
+        </div>
+            <footer>
+  <div class="mui-container mui--text-center">
+    <a href="http://kostkarubika.net">KostkaRubika.net</a> | <a href="http://kostkarubika.net/pages/cookies.html">Polityka Prywatności</a>
+  </div>
+</footer>
+    
+                <script src="//cdn.muicss.com/mui-0.9.1/js/mui.min.js" type="text/javascript"></script>
+<script src="//kostkarubika.net/assets/js/prettytable.js" type="text/javascript"></script>
+      </body>
+</html>

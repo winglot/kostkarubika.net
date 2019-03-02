@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="//kostkarubika.net/assets/images/logo-small.png">
+    <link rel="canonical" href="http://kostkarubika.net/5x5x5/ukladanie.html" itemprop="url">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4e342e">
+    <meta name="description" content="Strona KostkaRubika.net poświęcona jest najlepsze łamigłówce wszechczasów - Kostce Rubika. Kursy, poradniki i opisy dla początkujących i nie tylko." />
+    <meta name="keywords" content="kostka, rubika, rubik, algorytmy, 3x3x3, 3x3, fridrich, 4x4x4, 5x5x5, pyraminx, piramidka, square-1, układanie"/>
+
+        <title itemprop="name">Kostka 5x5x5 - kurs układania - KostkaRubika.net</title>
+
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<link href="//cdn.muicss.com/mui-0.9.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+<link href="//kostkarubika.net/assets/css/main.css" rel="stylesheet" type="text/css">
+      </head>
+  <body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3975745-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+                <header>
+  <div class="mui-appbar mui--appbar-height mui--appbar-line-height cube-bg--brown-dark">
+    <div class="mui-container">
+      <a href="http://kostkarubika.net" class="cube--no-decoration cube-text--white">
+        <img src="//kostkarubika.net/assets/images/logo-small.png">
+        <span class="mui--text-title">KostkaRubika.net</span>
+      </a>
+    </div>
+  </div>
+</header>
+      <div class="mui--appbar-height"></div>
+
+      
+                    <div id="content" class="mui-container">
+            <div class="mui-row cube-article mui--z4">
+    <div class="mui-col-md-12">
+      <article>
+        
+                                                                                                                                                                                                                                                                                            
+        <h1>Kurs układania kostki 5x5x5</h1>
+
+<p>Aby układanie kostki 5x5x5 zakończyło się sukcesem niezbędna będzie umiejętność ułożenia kostki 3x3x3.</p>
+
+<h2 id="wprowadzenie">Wprowadzenie</h2>
+
+<p>Proces układania możemy podzielić na trzy etapy:</p>
+
+<ul>
+<li><a href="#srodki">Układanie środkow</a> - układamy środki składające się z dziewięciu elementów,</li>
+<li><a href="#trojkowanie">Trójkowanie krawędzi</a> - łączymy w trójki krawędzie o jednakowych kolorach co pozwoli nam później traktować całą kostkę 5x5x5 jak zwykłą 3x3x3,</li>
+<li>Układanie jak zwykłą 3x3x3 - sparowane krawędzie traktujemy jako jedną całość, czyli całą kostke jako 3x3x3. Możemy układać dowolną znaną nam metodą z kostki 3x3x3. Przed rozpoczęciem układania ostatniej warstwy (OLL i PLL w Metodzie Fridrich) warto zwrócić uwagę czy nie występuje błąd parzystości (algorytmy z tego etapu burzą ostanią warstwę),</li>
+<li><a href="#parity">Błąd parzystości (parity error)</a> - etap ten nie zawsze pojawi się podczas układania - a jeżeli już to zrobi to jest najprzykrzejszą cześcią ponieważ przydługaśne algorytmy potrafią popsuć ułożenie, które wydawało się, że będzie świetne.</li>
+</ul>
+
+<h2 id="srodki">Układanie środków</h2>
+
+<p>Cały przebig układania kostki 5x5x5 zaczynamy od własciwego ułożenia wszystkich środków. Jeżeli miałeś wcześniej kontakt z kostką 4x4x4 to nie powinieneś mieć z typ etapem większych problemów. Środki w zasadzie można układać bez żadnych algorytmów metodą połączenia krawędzi i narożnika środka i wstawienia go w odpowiednie miejsce.</p>
+
+<p>Dobrze jest aby dwa pierwsze ułożone środki były na przeciwległych ściankach (znacznie ułatwia pracę pozostałymi czterema).</p>
+
+<p>Obrazki poniżej pokazują przykładową kolejność tworzenia środka:</p>
+
+<p class="centered">
+<img src="//kostkarubika.net/assets/images/5x5x5/s1.png" alt="Środki 1" />
+<img src="//kostkarubika.net/assets/images/5x5x5/s2.png" alt="Środki 2" />
+<img src="//kostkarubika.net/assets/images/5x5x5/s3.png" alt="Środki 3" />
+<img src="//kostkarubika.net/assets/images/5x5x5/s4.png" alt="Środki 4" />
+<img src="//kostkarubika.net/assets/images/5x5x5/s5.png" alt="Środki 5" />
+</p>
+
+<p>Oraz kilka algorytmów, które pomogą przy tych bardziej wymagacjących sytuacjach:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/s6.png" alt="Środki 6" /></td>
+  <td><code>(Rr) U2 (Rr)'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/s7.png" alt="Środki 7" /></td>
+  <td><code>(Rr) U' (Rr)'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/s8.png" alt="Środki 8" /></td>
+  <td><code>(Rr)' F' (Ll)' (Rr) U (Rr) U' (Ll) (Rr)'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/s9.png" alt="Środki 9" /></td>
+  <td><code>(Rr) U (Rr)' U (Rr) U2 (Rr)'</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="trojkowanie">Trójkowanie krawędzi</h2>
+
+<p>Na tym etapie musimy potrójkować wszystkie krawędzie w tych samych kolorach aby można je było traktować jako jedną całość - a kostkę jak zwykłą 3x3x3.</p>
+
+<p>Poniżej przedstawiony jest najprostszy sposób na połączenie ze sobą trzech krawędzi w dwóch krokach:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k1.png" alt="Krawędzie - krok 1" /></td>
+  <td><code>(Rr) U L' U' (Rr)'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k2.png" alt="Krawędzie - krok 2" /></td>
+  <td><code>(Rr) U L' U' (Rr)'</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>Powyższe algorytmy to tylko najprostszy i zarazem najdłuższ sposób na łączenie krawędzie. Z czasem powinien zostać zastąpiony przez coś bardziej wyrafinowanego.</p>
+
+<p>Łączenie dwóch ostatnich trójek wymaga czasem trochę gimnastyki. A to dlatego, że musimy uważać, aby nie zepsuć tego co wcześniej ułożyliśmy. Wprawa w układaniu kostki 5x5x5 pozwoli na wyeliminowanie większości z poniższych algorytmów.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k3.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>(Dd) R U R' F R' F' R (Dd)'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k4.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>(Dd)' L' U' L F' L F L' (Dd)'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k5.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>F2 (Rr) D2 (Rr)' F2 U2 F2 (Ll) B2 (Ll)'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k6.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>(Uu)2 (Rr)2 F2 u2 F2 (Rr)2 (Uu)2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k7.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>(Uu)' (Dd) R U R' F R' F' R (Dd)' (Uu)</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k8.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>(Rr)2 B2 (Rr)' U2 (Rr)' U2 B2 (Rr)' B2 (Rr) B2 (Rr)' B2 (Rr)2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k9.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>(Ll)' U2 (Ll)' U2 F2 (Ll)' F2 (Rr) U2 (Rr)' U2 (Ll)2</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k10.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>(Rr)' U2 (Rr)2 U2 (Rr) U2 (Rr)' U2 (Rr) U2 (Rr)2 U2 (Rr)'</code></td>
+</tr>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/k11.png" alt="Ostatnie dwie trójki - przypadek 1" /></td>
+  <td><code>(Ll) U2 (Ll)2 U2 (Ll)' U2 (Ll) U2 (Ll)' U2 (Ll)2 U2 (Ll)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="parity">Błąd parzystości</h2>
+
+<p>W tym etapie nie ma żadnej filozofii. Musimy nauczyć się długaśnego algroytmu.</p>
+
+<table>
+<thead>
+<tr>
+  <th>Ilustracja</th>
+  <th>Algorytm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><img src="//kostkarubika.net/assets/images/5x5x5/parity.png" alt="Błąd parzystości (parity)" /></td>
+  <td><code>(Rr)2 B2 U2 (Ll) U2 (Rr)' U2 (Rr) U2 F2 (Rr) F2 (Ll)' B2 (Rr)2</code></td>
+</tr>
+</tbody>
+</table>
+
+      </article>
+    </div>
+  </div>
+        </div>
+            <footer>
+  <div class="mui-container mui--text-center">
+    <a href="http://kostkarubika.net">KostkaRubika.net</a> | <a href="http://kostkarubika.net/pages/cookies.html">Polityka Prywatności</a>
+  </div>
+</footer>
+    
+                <script src="//cdn.muicss.com/mui-0.9.1/js/mui.min.js" type="text/javascript"></script>
+<script src="//kostkarubika.net/assets/js/prettytable.js" type="text/javascript"></script>
+      </body>
+</html>
