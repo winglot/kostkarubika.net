@@ -1,0 +1,41 @@
+@import 'base';
+@import 'panels';
+@import 'helpers';
+@import 'colors';
+@import 'ads';
+
+.cube-article {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+article {
+  padding: 5px;
+  text-align: justify;
+  h1 {
+    border-bottom: 1px dashed black;
+    font-size: 24px;
+    padding-bottom: 10px;
+    line-height: 1.1;
+  }
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  white-space: nowrap;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+img {
+  &.cube--pull-left {
+    margin: 5px 5px 5px 0px;
+  }
+
+  &.cube--pull-right {
+    margin: 5px 0px 5px 5px;
+  }
+}

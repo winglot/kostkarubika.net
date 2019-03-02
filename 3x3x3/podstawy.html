@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="//kostkarubika.net/assets/images/logo-small.png">
+    <link rel="canonical" href="http://kostkarubika.net/3x3x3/podstawy.html" itemprop="url">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4e342e">
+    <meta name="description" content="Strona KostkaRubika.net poświęcona jest najlepsze łamigłówce wszechczasów - Kostce Rubika. Kursy, poradniki i opisy dla początkujących i nie tylko." />
+    <meta name="keywords" content="kostka, rubika, rubik, algorytmy, 3x3x3, 3x3, fridrich, 4x4x4, 5x5x5, pyraminx, piramidka, square-1, układanie"/>
+
+        <title itemprop="name">Podstawowe pojęcia i ruchy (R, L, U itp.) - KostkaRubika.net</title>
+
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<link href="//cdn.muicss.com/mui-0.9.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+<link href="//kostkarubika.net/assets/css/main.css" rel="stylesheet" type="text/css">
+      </head>
+  <body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3975745-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+                <header>
+  <div class="mui-appbar mui--appbar-height mui--appbar-line-height cube-bg--brown-dark">
+    <div class="mui-container">
+      <a href="http://kostkarubika.net" class="cube--no-decoration cube-text--white">
+        <img src="//kostkarubika.net/assets/images/logo-small.png">
+        <span class="mui--text-title">KostkaRubika.net</span>
+      </a>
+    </div>
+  </div>
+</header>
+      <div class="mui--appbar-height"></div>
+
+      
+                    <div id="content" class="mui-container">
+            <div class="mui-row cube-article mui--z4">
+    <div class="mui-col-md-12">
+      <article>
+        
+                                                                                                                                                                                                                                                                                            
+        <h1>Podstawowe pojęcia i ruchy (R, L, U itp.)</h1>
+
+<h2>Podstawowe pojęcia</h2>
+
+<p>Przy przeglądaniu materiałów dostępnych na stronie spotkasz się z wieloma pojęciami, które jeżeli nie miałeś wcześniej styczności z kostką mogą wydać się niezrozumiała. Postaram się rzucić na nie trochę światła.</p>
+
+<p>Dwa najczęściej występujące pojęcia to <strong>narożnik</strong> oraz <strong>krawędź</strong> kostki (czasem nazywane róg i kant). Czym są? Myślę, że obrazek najlepiej to wytłumaczy.</p>
+
+<p class="centered">
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/corners.png" alt="Narożniki" />
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/edges.png" alt="Krawędzie" />
+</p>
+
+<p>Obrazek po lewej przedstawia narożniki. W całej kostce jest ich 8. Obrazek po prawej to oczywiście krawędzie a w całej kostce znajdziemy ich 12.</p>
+
+<p>Kolejnym często wykorzystywanym pojęciem są warstwy. Tradycyjną Kostkę Rubika (kostkę 3x3x3) możemy podzielić na trzy warstwy.</p>
+
+<p class="centered">
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/layer-top.png" alt="Górna warstwa" />
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/layer-middle.png" alt="Środkowa warstwa" />
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/layer-bottom.png" alt="Dolna warstwa" />
+</p>
+
+<p>Patrząc od lewej mamy:</p>
+
+<ol>
+<li>Górna warstwa</li>
+<li>Środkowa warstwa</li>
+<li>Dolna warstwa</li>
+</ol>
+
+<p>Można się spotkać także z pojęciem warstwy pierwszej/drugiej/trzeciej. Odnosi się to do kolejności ich układania.</p>
+
+<h2>Opis ruchów (R, L, U itp.)</h2>
+
+<p>Na początek warto przedstawić podstawowe oznaczenia jakie stosuje się przy notacji.
+Są to litery alfabetu: <code>R</code>, <code>L</code>, <code>U</code>, <code>D</code>, <code>F</code>, <code>B</code>, <code>M</code>, <code>E</code>, <code>S</code>, znak <code>'</code> (prim) oraz cyfra <code>2</code>.</p>
+
+<p>Pierwsze sześć z nich oznacza ruchy zewnętrznymi ściankami kostki:</p>
+
+<ul>
+<li><code>R</code> - oznacza ruch prawą ścianką kostki o 90 stopni zgodnie z ruchem wskazówek zegara</li>
+<li><code>L</code> - oznacza ruch lewą ścianką kostki o 90 stopni zgodnie z ruchem wskazówek zegara</li>
+<li><code>U</code> - oznacza ruch górną ścianką kostki o 90 stopni zgodnie z ruchem wskazówek zegara</li>
+<li><code>D</code> - oznacza ruch dolną ścianką kostki o 90 stopni zgodnie z ruchem wskazówek zegara</li>
+<li><code>F</code> - oznacza ruch przednią ścianką kostki o 90 stopni zgodnie z ruchem wskazówek zegara</li>
+<li><code>B</code> - oznacza ruch tylną ścianką kostki o 90 stopni zgodnie z ruchem wskazówek zegara</li>
+</ul>
+
+<p>Gdy dołożymy znak <code>'</code>, czyli <code>R'</code>, <code>L'</code>, <code>U'</code>, <code>D'</code>, <code>F'</code>, <code>B'</code> oznacza to obrót odpowiednią ścianką o 90 stopni <strong><em>przeciwnie do ruchu wskazówek zegara</em></strong>.</p>
+
+<p>Dołożenie cyfry <code>2</code>, np. <code>R2</code>, <code>B2</code>, oznacza wykonanie obrotu daną ścianką dwa razy (czyli o 180 stopni).</p>
+
+<p>Nie występują kombinacje posiadające zarówno znak <code>'</code> jak i cyfrę <code>2</code> np. <code>R2'</code>, <code>U'2</code> gdyż wykonanie obrotu ścianką o 180 stopni zgodnie czy przeciwnie do ruchu wskazówek zegara da taki sam efekt końcowy.</p>
+
+<p>Przykład wykonania ruchu <code>R</code> - obrotu prawej ścianki o 90 stopni zgodnie z ruchem wskazówek zegara:</p>
+
+<p class="centered">
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/ok.png" alt="Przed ruchem R" />
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/R.png" alt="Po ruchu R" />
+</p>
+
+<p>Kolejnymi oznaczeniami w notacji są ścianki środkowe. Możemy rozróżnić trzy: <code>M</code>, <code>E</code>, <code>S</code>. O ile w algorytmach możemy się spotkać z wykorzystaniem ścianki <code>M</code> o tyle <code>E</code> i <code>S</code> są rzadkością ponieważ ich obracanie bez odwracania całej kostki jest dość niewygodne.</p>
+
+<p class="centered">
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/M.png" alt="Ścianka środkowa M" />
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/E.png" alt="Ścianka środkowa E" />
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/S.png" alt="Ścianka środkowa S" />
+</p>
+
+<p>Spotyka się także algorytmy wykorzystujące małe litery <code>l</code>, <code>r</code>, <code>b</code>, <code>u</code>, <code>f</code>, <code>d</code>. Oznaczają one ruch daną ścianką oraz przylegającą do niej ścianką środkową w tym samym kierunku.</p>
+
+<p>Przykład wykonania ruchu <code>r</code> - obrotu prawej ścianki oraz przylegającej ścianki środkowej o 90 stopni zgodnie z ruchem wskazówek zegara:</p>
+
+<p class="centered">
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/ok.png" alt="Przed ruchem r" />
+<img src="//kostkarubika.net/assets/images/3x3x3/basics/r-m.png" alt="Po ruchu r" />
+</p>
+
+      </article>
+    </div>
+  </div>
+        </div>
+            <footer>
+  <div class="mui-container mui--text-center">
+    <a href="http://kostkarubika.net">KostkaRubika.net</a> | <a href="http://kostkarubika.net/pages/cookies.html">Polityka Prywatności</a>
+  </div>
+</footer>
+    
+                <script src="//cdn.muicss.com/mui-0.9.1/js/mui.min.js" type="text/javascript"></script>
+      </body>
+</html>
