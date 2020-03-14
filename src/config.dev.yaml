@@ -11,7 +11,7 @@ layout: "_layout/article.html.twig"
 
 mui_version: 0.9.1
 
-ads: []
+ads: [speedcube]
 
 routes:
     history:            "/3x3x3/historia.html"
